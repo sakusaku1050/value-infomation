@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information - セール情報</title>
+    <title>Value Information - 超お得セール情報</title>
     <style>
         body {
             background-color: #000000;
@@ -19,87 +19,78 @@
         }
         header {
             text-align: center;
-            padding: 40px 0;
-            border-bottom: 1px solid #ffd700;
             margin-bottom: 40px;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
         }
         .site-name {
             font-size: 1.2rem;
-            letter-spacing: 0.2em;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 10px;
         }
         h1 {
             font-size: 1.8rem;
-            margin: 0;
+            margin-top: 10px;
         }
         .card {
-            background-color: #0a0a0a;
+            background-color: #1a1a1a;
             border: 1px solid #ffd700;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 40px;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 0;
-            border-left: 4px solid #ffd700;
-            padding-left: 15px;
-            margin-bottom: 20px;
-        }
-        .description {
-            margin-bottom: 25px;
-        }
-        .benefit {
-            display: block;
-            font-size: 1.2rem;
+        .item-heading {
+            font-size: 1.4rem;
             font-weight: bold;
             margin-bottom: 15px;
-            color: #ffffff;
+            border-left: 4px solid #ffd700;
+            padding-left: 15px;
         }
-        .reason {
-            font-size: 1rem;
-            color: #ffd700;
-            opacity: 0.9;
+        .description-benefit {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
         }
-        .button-group {
+        .description-reason {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .button-container {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
         .btn {
             flex: 1;
-            min-width: 200px;
+            min-width: 150px;
+            padding: 12px 20px;
             text-align: center;
-            padding: 15px 0;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
         }
         .btn-amazon {
             background-color: #ffd700;
-            color: #000000;
-            border: 1px solid #ffd700;
-        }
-        .btn-amazon:hover {
-            background-color: #e6c200;
+            color: #000;
         }
         .btn-rakuten {
             background-color: transparent;
             color: #ffd700;
             border: 1px solid #ffd700;
         }
-        .btn-rakuten:hover {
-            background-color: rgba(255, 215, 0, 0.1);
+        .btn:hover {
+            opacity: 0.8;
         }
         footer {
             text-align: center;
             font-size: 0.8rem;
             margin-top: 50px;
-            color: #666;
+            color: #888;
         }
     </style>
 </head>
@@ -108,52 +99,52 @@
 <div class="container">
     <header>
         <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月24日 1時の超お得なセール品！</h1>
+        <h1>【楽天市場・Amazon】2026年2月24日 2時の超お得なセール品！</h1>
     </header>
 
-    <!-- 商品1 -->
+    <!-- 商品カード 1 -->
     <div class="card">
-        <h2>【45%OFF】次世代ノイズキャンセリングヘッドホン QuietMaster Pro</h2>
-        <div class="description">
-            <span class="benefit">雑踏の騒音を完全に消し去り、あなただけのプライベートコンサートホールを手に入れる。</span>
-            <p class="reason">
-                最新モデルの発売に伴う在庫処分セールにより、過去最安値を大幅に更新しました。<br>
-                この割引率は今後数ヶ月間は再来しない、まさに今だけのチャンスです。
+        <div class="item-heading">【45%OFF】次世代ノイズキャンセリング・ヘッドフォン Pro X</div>
+        <div class="description-box">
+            <span class="description-benefit">都会の喧騒を消し去り、自分だけの静寂なコンサートホールを。</span>
+            <p class="description-reason">
+                数年に一度の在庫一掃セールにより、過去最安値を大幅に更新しました。<br>
+                Amazonプライムデーに匹敵する割引率となっており、完売は時間の問題です。
             </p>
         </div>
-        <div class="button-group">
+        <div class="button-container">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
     </div>
 
-    <!-- 商品2 -->
+    <!-- 商品カード 2 -->
     <div class="card">
-        <h2>【ポイント20倍】超高速M4チップ搭載 14インチ ウルトラノートPC</h2>
-        <div class="description">
-            <span class="benefit">瞬きする間に終わる処理スピードが、あなたの創造性を限界まで加速させる。</span>
-            <p class="reason">
-                実質価格が他店を圧倒しており、ポイント還元分で周辺機器を全て揃えることが可能です。<br>
-                24時間限定のポイントアップ対象となっており、在庫が急速に減少しています。
+        <div class="item-heading">【ポイント20倍】超高画質 8K スマートモニター 32インチ</div>
+        <div class="description-box">
+            <span class="description-benefit">圧倒的な没入感で、日常のデスクワークを極上の映像体験へ変える。</span>
+            <p class="description-reason">
+                楽天お買い物マラソンの連動企画により、実質価格が他店を圧倒しています。<br>
+                さらに今なら期間限定のクーポンも併用可能で、今買うのが最も賢い選択です。
             </p>
         </div>
-        <div class="button-group">
+        <div class="button-container">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
     </div>
 
-    <!-- 商品3 -->
+    <!-- 商品カード 3 -->
     <div class="card">
-        <h2>【30%OFF】スマートウォッチ 8G エディション</h2>
-        <div class="description">
-            <span class="benefit">手首のパーソナルコーチが、あなたの健康寿命を24時間体制で守り抜く。</span>
-            <p class="reason">
-                メーカーの期間限定クーポンが適用可能な、今月唯一の大型セール期間に突入しました。<br>
-                高機能モデルを標準モデルの価格で購入できる唯一のタイミングを逃さないでください。
+        <div class="item-heading">【35%OFF】超薄型ハイスペックゲーミングノートPC</div>
+        <div class="description-box">
+            <span class="description-benefit">場所を選ばず、あらゆるゲームの世界を最高設定で駆け巡る自由を。</span>
+            <p class="description-reason">
+                新型チップセット発表前の最終在庫処分のため、このスペックではあり得ない価格設定です。<br>
+                Amazonのタイムセール祭りに合わせ、ポイント還元率も極限まで高まっています。
             </p>
         </div>
-        <div class="button-group">
+        <div class="button-container">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
