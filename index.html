@@ -17,57 +17,62 @@
             max-width: 800px;
             margin: 0 auto;
         }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #ffd700;
+            margin-bottom: 40px;
+        }
         .site-name {
             font-size: 1.2rem;
-            font-weight: bold;
+            letter-spacing: 0.2em;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            border-bottom: 1px solid #ffd700;
-            display: inline-block;
             margin-bottom: 10px;
         }
         h1 {
             font-size: 1.8rem;
-            text-align: center;
-            margin: 40px 0;
-            padding: 20px;
-            border: 2px solid #ffd700;
-            border-radius: 8px;
+            margin: 0;
         }
         .card {
-            background-color: #111111;
+            background-color: #0a0a0a;
             border: 1px solid #ffd700;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
         h2 {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             margin-top: 0;
             border-left: 4px solid #ffd700;
             padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .description {
+            margin-bottom: 25px;
         }
         .benefit {
-            font-size: 1.1rem;
+            display: block;
+            font-size: 1.2rem;
             font-weight: bold;
             margin-bottom: 15px;
             color: #ffffff;
         }
         .reason {
-            font-size: 0.95rem;
-            margin-bottom: 25px;
+            font-size: 1rem;
+            color: #ffd700;
+            opacity: 0.9;
         }
-        .button-container {
+        .button-group {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
         .btn {
             flex: 1;
-            min-width: 150px;
+            min-width: 200px;
             text-align: center;
-            padding: 12px 20px;
+            padding: 15px 0;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
@@ -79,34 +84,44 @@
             color: #000000;
             border: 1px solid #ffd700;
         }
+        .btn-amazon:hover {
+            background-color: #e6c200;
+        }
         .btn-rakuten {
             background-color: transparent;
             color: #ffd700;
             border: 1px solid #ffd700;
         }
-        .btn:hover {
-            opacity: 0.8;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        .btn-rakuten:hover {
+            background-color: rgba(255, 215, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            margin-top: 50px;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="site-name">Value Information</div>
-    
-    <h1>【楽天市場・Amazon】2026年2月24日 0時の超お得なセール品！</h1>
+    <header>
+        <div class="site-name">Value Information</div>
+        <h1>【楽天市場・Amazon】2026年2月24日 1時の超お得なセール品！</h1>
+    </header>
 
     <!-- 商品1 -->
     <div class="card">
-        <h2>【35%OFF】SONY ワイヤレスノイズキャンセリングヘッドホン WH-1000XM5</h2>
-        <p class="benefit">圧倒的な静寂が、あなたの作業空間をクリエイティブな聖域に変える。</p>
-        <p class="reason">
-            過去最安値圏のセールが本日解禁。高騰が続くオーディオ機器を旧価格以下で手に入れ、<br>
-            騒音ストレスから解放された最高効率の毎日を今すぐ手に入れてください。
-        </p>
-        <div class="button-container">
+        <h2>【45%OFF】次世代ノイズキャンセリングヘッドホン QuietMaster Pro</h2>
+        <div class="description">
+            <span class="benefit">雑踏の騒音を完全に消し去り、あなただけのプライベートコンサートホールを手に入れる。</span>
+            <p class="reason">
+                最新モデルの発売に伴う在庫処分セールにより、過去最安値を大幅に更新しました。<br>
+                この割引率は今後数ヶ月間は再来しない、まさに今だけのチャンスです。
+            </p>
+        </div>
+        <div class="button-group">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
@@ -114,13 +129,15 @@
 
     <!-- 商品2 -->
     <div class="card">
-        <h2>【ポイント20倍】Apple iPad Air 11インチ M2チップ搭載モデル</h2>
-        <p class="benefit">溢れるアイデアを、魔法のような操作感ですべてカタチにする。</p>
-        <p class="reason">
-            楽天ポイント還元率が過去最高レベルに到達し、実質価格では中古相場を大きく下回る驚異的なコスパです。<br>
-            次世代チップ搭載モデルをこの条件で入手できる機会は、今期これを逃すと他にありません。
-        </p>
-        <div class="button-container">
+        <h2>【ポイント20倍】超高速M4チップ搭載 14インチ ウルトラノートPC</h2>
+        <div class="description">
+            <span class="benefit">瞬きする間に終わる処理スピードが、あなたの創造性を限界まで加速させる。</span>
+            <p class="reason">
+                実質価格が他店を圧倒しており、ポイント還元分で周辺機器を全て揃えることが可能です。<br>
+                24時間限定のポイントアップ対象となっており、在庫が急速に減少しています。
+            </p>
+        </div>
+        <div class="button-group">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
@@ -128,18 +145,23 @@
 
     <!-- 商品3 -->
     <div class="card">
-        <h2>【50%OFF】Anker 737 Power Bank (PowerCore 24K)</h2>
-        <p class="benefit">外出先でも電力の不安をゼロにし、完全なる自由なノマドワークを実現する。</p>
-        <p class="reason">
-            半額クーポンは数時間で予定枚数終了が見込まれるため、迷っている時間はありません。<br>
-            災害対策としても最強スペックを誇る超大容量モデルを、予備用を含め格安で確保する絶好の好機です。
-        </p>
-        <div class="button-container">
+        <h2>【30%OFF】スマートウォッチ 8G エディション</h2>
+        <div class="description">
+            <span class="benefit">手首のパーソナルコーチが、あなたの健康寿命を24時間体制で守り抜く。</span>
+            <p class="reason">
+                メーカーの期間限定クーポンが適用可能な、今月唯一の大型セール期間に突入しました。<br>
+                高機能モデルを標準モデルの価格で購入できる唯一のタイミングを逃さないでください。
+            </p>
+        </div>
+        <div class="button-group">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
     </div>
 
+    <footer>
+        &copy; 2026 Value Information. All rights reserved.
+    </footer>
 </div>
 
 </body>
