@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information - 超お得セール情報</title>
+    <title>Value Information - セール情報</title>
     <style>
         body {
             background-color: #000000;
@@ -19,13 +19,13 @@
         }
         header {
             text-align: center;
-            margin-bottom: 40px;
             border-bottom: 2px solid #ffd700;
-            padding-bottom: 10px;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
         }
         .site-name {
             font-size: 1.2rem;
-            letter-spacing: 2px;
+            letter-spacing: 0.2em;
             text-transform: uppercase;
         }
         h1 {
@@ -33,32 +33,32 @@
             margin-top: 10px;
         }
         .card {
-            background-color: #1a1a1a;
+            background-color: #0a0a0a;
             border: 1px solid #ffd700;
-            border-radius: 10px;
+            border-radius: 8px;
             padding: 25px;
             margin-bottom: 30px;
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
-        .item-heading {
+        .product-title {
             font-size: 1.4rem;
             font-weight: bold;
             margin-bottom: 15px;
             border-left: 4px solid #ffd700;
             padding-left: 15px;
         }
-        .description-benefit {
+        .benefit {
             font-size: 1.1rem;
             font-weight: bold;
             margin-bottom: 10px;
             display: block;
         }
-        .description-reason {
+        .reason {
             font-size: 0.95rem;
             margin-bottom: 20px;
-            color: #fff;
+            color: #f0e68c;
         }
-        .button-container {
+        .button-group {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
@@ -66,31 +66,35 @@
         .btn {
             flex: 1;
             min-width: 150px;
-            padding: 12px 20px;
             text-align: center;
+            padding: 12px 20px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 5px;
-            transition: opacity 0.3s ease;
-            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            border: 1px solid #ffd700;
         }
         .btn-amazon {
             background-color: #ffd700;
             color: #000;
         }
+        .btn-amazon:hover {
+            background-color: #000;
+            color: #ffd700;
+        }
         .btn-rakuten {
             background-color: transparent;
             color: #ffd700;
-            border: 1px solid #ffd700;
         }
-        .btn:hover {
-            opacity: 0.8;
+        .btn-rakuten:hover {
+            background-color: #ffd700;
+            color: #000;
         }
         footer {
             text-align: center;
-            font-size: 0.8rem;
             margin-top: 50px;
-            color: #888;
+            font-size: 0.8rem;
+            opacity: 0.7;
         }
     </style>
 </head>
@@ -99,59 +103,53 @@
 <div class="container">
     <header>
         <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月24日 2時の超お得なセール品！</h1>
+        <h1>【楽天市場・Amazon】2026年2月24日 3時の超お得なセール品！</h1>
     </header>
 
-    <!-- 商品カード 1 -->
+    <!-- 商品1 -->
     <div class="card">
-        <div class="item-heading">【45%OFF】次世代ノイズキャンセリング・ヘッドフォン Pro X</div>
-        <div class="description-box">
-            <span class="description-benefit">都会の喧騒を消し去り、自分だけの静寂なコンサートホールを。</span>
-            <p class="description-reason">
-                数年に一度の在庫一掃セールにより、過去最安値を大幅に更新しました。<br>
-                Amazonプライムデーに匹敵する割引率となっており、完売は時間の問題です。
-            </p>
-        </div>
-        <div class="button-container">
+        <div class="product-title">【35%OFF】次世代ノイズキャンセリングヘッドホン SonicSilence Elite</div>
+        <p class="benefit">騒音を消し去り、自分だけの静寂という贅沢をその手に。</p>
+        <p class="reason">
+            最新モデル発表直前の在庫一掃セールにより、過去最安値を更新する大幅値下げが実施されています。<br>
+            Amazonではさらに期間限定の数千円オフクーポンが併用可能で、今が間違いなく買い時です。
+        </p>
+        <div class="button-group">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
     </div>
 
-    <!-- 商品カード 2 -->
+    <!-- 商品2 -->
     <div class="card">
-        <div class="item-heading">【ポイント20倍】超高画質 8K スマートモニター 32インチ</div>
-        <div class="description-box">
-            <span class="description-benefit">圧倒的な没入感で、日常のデスクワークを極上の映像体験へ変える。</span>
-            <p class="description-reason">
-                楽天お買い物マラソンの連動企画により、実質価格が他店を圧倒しています。<br>
-                さらに今なら期間限定のクーポンも併用可能で、今買うのが最も賢い選択です。
-            </p>
-        </div>
-        <div class="button-container">
+        <div class="product-title">【20%ポイントバック】高精度スマートウォッチ HealthTracker Pro v3</div>
+        <p class="benefit">24時間、専属のパーソナルトレーナーがあなたの腕に。</p>
+        <p class="reason">
+            楽天お買い物マラソンの目玉商品として、実質価格が市場想定価格を大きく下回る設定になっています。<br>
+            大型アップデートにより睡眠解析機能が強化された直後の今、健康管理を劇的に進化させる絶好の機会です。
+        </p>
+        <div class="button-group">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
     </div>
 
-    <!-- 商品カード 3 -->
+    <!-- 商品3 -->
     <div class="card">
-        <div class="item-heading">【35%OFF】超薄型ハイスペックゲーミングノートPC</div>
-        <div class="description-box">
-            <span class="description-benefit">場所を選ばず、あらゆるゲームの世界を最高設定で駆け巡る自由を。</span>
-            <p class="description-reason">
-                新型チップセット発表前の最終在庫処分のため、このスペックではあり得ない価格設定です。<br>
-                Amazonのタイムセール祭りに合わせ、ポイント還元率も極限まで高まっています。
-            </p>
-        </div>
-        <div class="button-container">
+        <div class="product-title">【50%OFF】大容量ポータブル電源 PowerMaster 2000W</div>
+        <p class="benefit">どこにいても、自宅と同じ自由な電力をその手に。</p>
+        <p class="reason">
+            防災意識の高まりに応えた24時間限定の半額セールで、同スペック他社製品の追随を許さない圧倒的コスパを実現しています。<br>
+            春のキャンプシーズン到来前に、バックアップ電源を確保しておくためのラストチャンスと言える価格設定です。
+        </p>
+        <div class="button-group">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
     </div>
 
     <footer>
-        &copy; 2026 Value Information. All rights reserved.
+        &copy; 2026 Value Information. 全ての情報は掲載時点のものです。
     </footer>
 </div>
 
