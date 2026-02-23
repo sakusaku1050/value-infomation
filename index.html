@@ -3,34 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Huck Premium</title>
+    <title>漆黒と黄金の逸品 - Amazonおすすめガジェット</title>
     <style>
-        :root { --g: #ffd700; }
-        body { background: #0a0a0a; color: #fff; font-family: sans-serif; line-height: 1.8; margin: 0; padding: 0; }
-        .banner { border-bottom: 3px solid var(--g); padding: 50px 20px; text-align: center; position: relative; overflow: hidden; }
-        .banner::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent, rgba(255,215,0,0.1), transparent); transform: rotate(45deg); animation: s 4s infinite; }
-        @keyframes s { 0% { transform: translateX(-100%) rotate(45deg); } 100% { transform: translateX(100%) rotate(45deg); } }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        .card { background: #1a1a1a; border-radius: 20px; padding: 30px; margin-bottom: 40px; border: 1px solid #333; }
-        h3 { color: var(--g); }
-        .btn { display: block; background: #ff9900; color: #000; padding: 12px; text-decoration: none; border-radius: 30px; text-align: center; font-weight: bold; }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #1a1a1a, #000000);
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        h1 {
+            color: #d4af37;
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+            letter-spacing: 0.1em;
+        }
+
+        p.intro {
+            max-width: 800px;
+            margin: 20px auto;
+            color: #e0e0e0;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #0a0a0a;
+            border: 1px solid #d4af37;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-50px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .card-title {
+            color: #d4af37;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #d4af37;
+            padding-bottom: 10px;
+        }
+
+        .card-description {
+            color: #cccccc;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .price-tag {
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: block;
+            text-align: right;
+        }
+
+        .amazon-button {
+            display: block;
+            text-align: center;
+            background: linear-gradient(45deg, #d4af37, #f9f295, #d4af37);
+            color: #000;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .amazon-button:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.8rem;
+            color: #666;
+            border-top: 1px solid #333;
+        }
+
+        .gold-text {
+            color: #d4af37;
+        }
     </style>
 </head>
 <body>
-    <div class="banner"><h1 style="color:var(--g)">VALUE HUCK PREMIUM</h1></div>
-    <div class="container">
-        <p>2026年2月23日、今日のおすすめガジェットです。</p>
-        <div class="card">
-            <h3>Apple AirPods Pro (第2世代)</h3>
-            <p>圧倒的な静寂。USB-C対応でさらに便利に。</p>
-            <a href="https://www.amazon.co.jp/s?k=B0CHX569H5" class="btn">Amazonで見る</a>
+
+<header>
+    <h1>漆黒と黄金の逸品</h1>
+    <p class="intro">
+        Amazonで見つけた、毎日の生活を少し贅沢に変えてくれるお得なガジェットを厳選しました。<br>
+        使いやすさと見た目の美しさを兼ね備えた、選りすぐりの6点をご紹介します。
+    </p>
+</header>
+
+<div class="container">
+    <!-- ガジェット 1 -->
+    <div class="card">
+        <div>
+            <div class="card-title">静寂を届けるヘッドホン</div>
+            <p class="card-description">
+                周りの音をすっと消して、大好きな音楽だけに浸れる魔法のようなヘッドホンです。耳を優しく包み込むクッションが、長時間の移動やデスクワークを快適な癒やしの時間に変えてくれます。
+            </p>
         </div>
-        <div class="card">
-            <h3>Sony WH-1000XM5</h3>
-            <p>音楽に没入するための、最高峰のヘッドホン。</p>
-            <a href="https://www.amazon.co.jp/s?k=B09Y29MGV1" class="btn">Amazonで見る</a>
+        <div>
+            <span class="price-tag">機能美を極めた、今だけの特別価格</span>
+            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
         </div>
-        <p style="text-align:center">他にもお買い得品がいっぱいです。また明日！</p>
     </div>
+
+    <!-- ガジェット 2 -->
+    <div class="card">
+        <div>
+            <div class="card-title">腕に輝く健康パートナー</div>
+            <p class="card-description">
+                時計を見るだけで、歩いた歩数や眠りの深さがひと目でわかります。スマホに届いた大事なメッセージも見逃しません。漆黒の画面に浮かび上がる文字が、あなたの手元を美しく彩ります。
+            </p>
+        </div>
+        <div>
+            <span class="price-tag">日常をスマートに彩る人気モデル</span>
+            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
+        </div>
+    </div>
+
+    <!-- ガジェット 3 -->
+    <div class="card">
+        <div>
+            <div class="card-title">手のひらサイズの映画館</div>
+            <p class="card-description">
+                白い壁さえあれば、そこが映画館に早変わり。コンパクトなのに驚くほど鮮やかで大きな映像を映し出せます。週末の夜、お部屋を暗くしてゆったりと映画を楽しむ贅沢を味わってみませんか。
+            </p>
+        </div>
+        <div>
+            <span class="price-tag">驚きの美しさを、驚きの価格で</span>
+            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
+        </div>
+    </div>
+
+    <!-- ガジェット 4 -->
+    <div class="card">
+        <div>
+            <div class="card-title">魔法の板状バッテリー</div>
+            <p class="card-description">
+                スマホの充電が切れそうな時も、これがあれば安心です。薄くて軽いのでバッグの中でもかさばりません。いざという時のためのお守りとして、一歩先行く安心を身にまとってみてください。
+            </p>
+        </div>
+        <div>
+            <span class="price-tag">もしもの時の、頼れる黄金の味方</span>
+            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
+        </div>
+    </div>
+
+    <!-- ガジェット 5 -->
+    <div class="card">
+        <div>
+            <div class="card-title">光り輝く高速読書機</div>
+            <p class="card-description">
+                何千冊もの本をこの一枚に。本物の紙のような優しい画面は、長い時間読んでも目が疲れにくいのが特徴です。お風呂でも使えるので、自分だけの至福の読書タイムを心ゆくまで楽しめます。
+            </p>
+        </div>
+        <div>
+            <span class="price-tag">読書好きに贈る、最高の贈り物</span>
+            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
+        </div>
+    </div>
+
+    <!-- ガジェット 6 -->
+    <div class="card">
+        <div>
+            <div class="card-title">未来を照らす充電台</div>
+            <p class="card-description">
+                スマホを置くだけで、スッと充電が始まります。ケーブルを抜き差しする手間はもういりません。デスクに置いておくだけで、まるでインテリアのような高級感を演出してくれる美しいデザインです。
+            </p>
+        </div>
+        <div>
+            <span class="price-tag">利便性と美しさが調和した一品</span>
+            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2023 漆黒と黄金のガジェットセレクション<br>
+    ※価格は常に変動いたします。最新の情報はAmazon公式サイトにてご確認ください。</p>
+</footer>
+
 </body>
 </html>
