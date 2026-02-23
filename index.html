@@ -6,126 +6,141 @@
     <title>Value Information - セール情報</title>
     <style>
         body {
-            background-color: #000;
+            background-color: #000000;
             color: #ffd700;
-            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 20px;
-            line-height: 1.6;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
         }
         header {
-            text-align: center;
-            border-bottom: 2px solid #ffd700;
-            padding-bottom: 20px;
-            margin-bottom: 40px;
-        }
-        .site-name {
+            text-align: left;
             font-size: 1.2rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ffd700;
+            padding-bottom: 10px;
         }
         h1 {
+            text-align: center;
             font-size: 1.8rem;
-            margin: 10px 0 0;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
         }
-        .product-card {
-            background-color: #0a0a0a;
+        .card {
+            background-color: #111111;
             border: 1px solid #ffd700;
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
-        h2 {
+        .product-title {
             font-size: 1.4rem;
+            font-weight: bold;
             margin-top: 0;
+            margin-bottom: 15px;
             border-left: 4px solid #ffd700;
             padding-left: 15px;
-            margin-bottom: 20px;
         }
         .benefit {
-            display: block;
-            font-weight: bold;
             font-size: 1.1rem;
-            color: #fff;
-            margin-bottom: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
         }
         .reason {
             font-size: 0.95rem;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+            color: #ffffff;
         }
-        .button-container {
+        .button-group {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
         .btn {
             flex: 1;
+            min-width: 150px;
             text-align: center;
-            padding: 12px 20px;
+            padding: 12px 0;
             text-decoration: none;
             font-weight: bold;
             border-radius: 6px;
-            transition: all 0.3s ease;
-            min-width: 160px;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
         }
         .btn-amazon {
             background-color: #ffd700;
-            color: #000;
-            border: 1px solid #ffd700;
-        }
-        .btn-amazon:hover {
-            background-color: #000;
-            color: #ffd700;
+            color: #000000;
         }
         .btn-rakuten {
             background-color: transparent;
             color: #ffd700;
             border: 1px solid #ffd700;
         }
-        .btn-rakuten:hover {
-            background-color: #ffd700;
-            color: #000;
+        @media (max-width: 600px) {
+            h1 { font-size: 1.4rem; }
+            .product-title { font-size: 1.2rem; }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <header>
-        <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月24日 7時の超お得なセール品！</h1>
-    </header>
+    <header>Value Information</header>
+    
+    <h1>【楽天市場・Amazon】2026年2月24日 8時の超お得なセール品！</h1>
 
-    <article class="product-card">
-        <h2>【40%OFF】次世代ノイズキャンセリングヘッドホン UltraSilence Pro</h2>
-        <p class="benefit">騒音を消し去り、どこにいても自分だけの極上の静寂を手に入れる。</p>
+    <!-- 商品カード1 -->
+    <div class="card">
+        <h2 class="product-title">【45%OFF】次世代ノイズキャンセリングヘッドホン Elite Pro X</h2>
+        <p class="benefit">騒音を消し去り、瞬時にあなただけの極上リスニングルームへ。</p>
         <p class="reason">
-            Amazonタイムセールと楽天ポイントバック祭が重なる、年に一度の最安値更新タイミングです。<br>
-            在庫限りで終了となるため、このチャンスを逃すと次の入荷は数ヶ月先になる見込みです。
+            過去最安値を更新したこの瞬間に手に入れなければ、次回のセールまで数ヶ月待つことになります。<br>
+            圧倒的な没入感による作業効率の向上は、投資額以上の価値を即座に提供してくれるでしょう。
         </p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+        <div class="button-group">
+            <a href="#" class="btn btn-amazon">Amazonで見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
-    </article>
+    </div>
 
-    <article class="product-card">
-        <h2>【ポイント20倍】8K対応超小型レーザープロジェクター Lumos X</h2>
-        <p class="benefit">自宅の壁が映画館に。圧倒的な没入感で日常を非日常へと変貌させる。</p>
+    <!-- 商品カード2 -->
+    <div class="card">
+        <h2 class="product-title">【ポイント20倍】超薄型 14インチ M4搭載ノートPC </h2>
+        <p class="benefit">羽のような軽さと圧倒的パワーで、場所を選ばずクリエイティビティを爆発させる。</p>
         <p class="reason">
-            最新モデル発表直前の在庫処分により、実質価格で過去最大の還元率が実現しました。<br>
-            期間限定のクーポンも併用可能な今こそ、憧れのホームシアターを構築する絶好の機会です。
+            実質価格が旧モデルを下回る逆転現象が発生しており、今このタイミングが最も買い時と言えます。<br>
+            在庫が極端に少なくなっているため、迷っている間に完売する可能性が非常に高い限定セールです。
         </p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+        <div class="button-group">
+            <a href="#" class="btn btn-amazon">Amazonで見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
-    </article>
+    </div>
+
+    <!-- 商品カード3 -->
+    <div class="card">
+        <h2 class="product-title">【30%OFF】スマートホーム・ハブ プレミアムエディション</h2>
+        <p class="benefit">一声で家中を操り、あなたの生活を近未来の快適さへアップデート。</p>
+        <p class="reason">
+            期間限定のクーポン配布により、他店を圧倒する価格設定が実現している今が導入の好機です。<br>
+            日々のルーチンを自動化することで生まれる「自由な時間」は、どんな高級品よりもあなたを豊かにします。
+        </p>
+        <div class="button-group">
+            <a href="#" class="btn btn-amazon">Amazonで見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        </div>
+    </div>
+
 </div>
 
 </body>
