@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Information - お買い得ガジェット紹介</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffd700;
+            font-family: 'Times New Roman', "MS P明朝", "MS PMincho", "Hiragino Mincho ProN", serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #ffd700;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+        }
+        .site-name {
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin: 40px 0;
+            text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.3);
+        }
+        h2 {
+            border-left: 5px solid #ffd700;
+            padding-left: 15px;
+            margin-top: 50px;
+            font-size: 1.6rem;
+        }
+        .intro-text, .summary-text {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            text-align: justify;
+            background: rgba(255, 215, 0, 0.05);
+            padding: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 8px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .product-card {
+            border: 1px solid #ffd700;
+            padding: 20px;
+            background: linear-gradient(145deg, #0f0f0f, #000000);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
+        }
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            height: 3.6em;
+            overflow: hidden;
+        }
+        .product-description {
+            font-size: 0.9rem;
+            color: #f0e68c;
+            margin-bottom: 20px;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            flex: 1;
+            text-align: center;
+            padding: 10px 0;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.8rem;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+        .btn-amazon {
+            background-color: #ffd700;
+            color: #000;
+        }
+        .btn-rakuten {
+            border: 1px solid #ffd700;
+            color: #ffd700;
+        }
+        .btn:hover {
+            opacity: 0.8;
+            filter: brightness(1.2);
+        }
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 215, 0, 0.3);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="site-name">Value Information</div>
+    </header>
+
+    <h1>【楽天市場・Amazon】2026年2月23日 23時のお買い得品をご紹介！</h1>
+
+    <section>
+        <h2>2026年2月23日 23時のお買い得商品6選</h2>
+        <p class="intro-text">
+            今、この瞬間、最高級の価値を手に入れるチャンスが到来しました！2026年2月23日23時、楽天市場とAmazonから厳選された、妥協なき性能を誇る至高のガジェット6選をお届けします。最新技術が凝縮された逸品たちが、驚愕のプライスであなたの手に。手にした瞬間に生活の質が変わる、そんな圧倒的な高揚感を約束するラインナップです。在庫は僅か、早い者勝ちの祭典。今すぐその目で、時代を凌駕する価値を確かめてください！
+        </p>
+    </section>
+
+    <div class="product-grid">
+        <!-- 商品1 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">次世代フラッグシップ スマートフォン Pro Max</div>
+                <p class="product-description">圧倒的な処理速度と芸術的なカメラ性能。未来をその手に収める至高の1台。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
+        </div>
+
+        <!-- 商品2 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">究極のノイズキャンセリング ヘッドホン</div>
+                <p class="product-description">静寂の中で響く、純粋な音の輝き。日常を劇場に変える魔法のオーディオ。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
+        </div>
+
+        <!-- 商品3 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">4K/240Hz 超高解像度 ゲーミングモニター</div>
+                <p class="product-description">現実を超える色彩と滑らかさ。勝利を確実にするための、プロ仕様の視覚体験。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
+        </div>
+
+        <!-- 商品4 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">高級メカニカル キーボード Elite Edition</div>
+                <p class="product-description">指先から伝わる至福の打鍵感。美しさと機能性を兼ね備えたデスクの芸術品。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
+        </div>
+
+        <!-- 商品5 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">スマートウォッチ Titanium Luxury</div>
+                <p class="product-description">健康管理もステータスもこれ一つで。チタンボディが放つ唯一無二の存在感。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
+        </div>
+
+        <!-- 商品6 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">大容量ポータブル電源 プレミアムモデル</div>
+                <p class="product-description">非常時もアウトドアも、これさえあれば安心。圧倒的な電力を、優雅なデザインで。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h2>お得なアイテムをチェックしよう！</h2>
+        <p class="summary-text">
+            いかがでしたでしょうか。今回ご紹介した6つのアイテムは、どれも2026年の最前線を走る、まさに選ばれし者のためのガジェットです。価格以上の価値、そして所有することの悦びを、ぜひこの機会に味わってください。楽天市場とAmazonのセールは時間との戦いです。迷っている間に完売してしまうことも珍しくありません。あなたのライフスタイルを劇的に進化させる最高の一品を、今すぐ手に入れ、輝かしい明日を迎えましょう！
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2026 Value Information. All Rights Reserved.
+    </footer>
+</div>
+
+</body>
+</html>
