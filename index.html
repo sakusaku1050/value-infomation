@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Huck Premium - 本日のお買い得ガジェット</title>
+    <title>Value Huck Premium</title>
     <style>
-        :root { --premium-black: #0a0a0a; --premium-gold: #ffd700; }
-        body { background-color: var(--premium-black); color: #ffffff; font-family: sans-serif; margin: 0; padding: 0; }
-        .premium-banner { background: var(--premium-black); border-bottom: 3px solid var(--premium-gold); padding: 40px 20px; text-align: center; position: relative; overflow: hidden; }
-        .premium-banner::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent, rgba(255,215,0,0.1), transparent); transform: rotate(45deg); animation: shine 4s infinite; }
-        @keyframes shine { 0% { transform: translateX(-100%) rotate(45deg); } 100% { transform: translateX(100%) rotate(45deg); } }
-        .banner-title { font-size: 2.5em; color: var(--premium-gold); letter-spacing: 3px; }
+        :root { --g: #ffd700; }
+        body { background: #0a0a0a; color: #fff; font-family: sans-serif; line-height: 1.8; margin: 0; padding: 0; }
+        .banner { border-bottom: 3px solid var(--g); padding: 50px 20px; text-align: center; position: relative; overflow: hidden; }
+        .banner::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent, rgba(255,215,0,0.1), transparent); transform: rotate(45deg); animation: s 4s infinite; }
+        @keyframes s { 0% { transform: translateX(-100%) rotate(45deg); } 100% { transform: translateX(100%) rotate(45deg); } }
         .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        .product-card { background: #1a1a1a; border-radius: 20px; padding: 25px; margin-bottom: 40px; border: 1px solid #333; }
-        h3 { color: var(--premium-gold); }
-        .btn-amazon { background-color: #ff9900; color: #000; padding: 10px 20px; text-decoration: none; border-radius: 30px; font-weight: bold; }
-        footer { text-align: center; padding: 40px; color: #666; }
+        .card { background: #1a1a1a; border-radius: 20px; padding: 30px; margin-bottom: 40px; border: 1px solid #333; }
+        h3 { color: var(--g); }
+        .btn { display: block; background: #ff9900; color: #000; padding: 12px; text-decoration: none; border-radius: 30px; text-align: center; font-weight: bold; }
     </style>
 </head>
 <body>
-    <div class="premium-banner">
-        <h1 class="banner-title">VALUE HUCK PREMIUM</h1>
-    </div>
+    <div class="banner"><h1 style="color:var(--g)">VALUE HUCK PREMIUM</h1></div>
     <div class="container">
-        <h2>今日のお買い得商品！</h2>
-        <div class="product-card">
-            <h3>Apple AirPods Pro (第2世代) USB-C</h3>
-            <p>圧倒的なノイズキャンセリング。USB-C対応で利便性が向上！</p>
-            <a href="https://www.amazon.co.jp/s?k=B0CHX569H5" class="btn-amazon">Amazonで見る</a>
+        <p>2026年2月23日、今日のおすすめガジェットです。</p>
+        <div class="card">
+            <h3>Apple AirPods Pro (第2世代)</h3>
+            <p>圧倒的な静寂。USB-C対応でさらに便利に。</p>
+            <a href="https://www.amazon.co.jp/s?k=B0CHX569H5" class="btn">Amazonで見る</a>
         </div>
-        <p>※他、おやびん厳選の6アイテムを掲載中！</p>
+        <div class="card">
+            <h3>Sony WH-1000XM5</h3>
+            <p>音楽に没入するための、最高峰のヘッドホン。</p>
+            <a href="https://www.amazon.co.jp/s?k=B09Y29MGV1" class="btn">Amazonで見る</a>
+        </div>
+        <p style="text-align:center">他にもお買い得品がいっぱいです。また明日！</p>
     </div>
-    <footer>&copy; 2026 Value Huck Premium.</footer>
 </body>
 </html>
