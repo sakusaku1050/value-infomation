@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information - 超お得なセール品</title>
+    <title>Value Information</title>
     <style>
         body {
             background-color: #000000;
@@ -32,12 +32,12 @@
             font-size: 1.8rem;
             margin-top: 10px;
         }
-        .product-card {
+        .card {
+            background-color: #111111;
             border: 1px solid #ffd700;
-            border-radius: 12px;
+            border-radius: 10px;
             padding: 25px;
             margin-bottom: 30px;
-            background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
         .product-title {
@@ -51,13 +51,14 @@
             font-size: 1.1rem;
             font-weight: bold;
             margin-bottom: 10px;
-            color: #ffffff;
+            display: block;
         }
         .reason {
             font-size: 0.95rem;
             margin-bottom: 20px;
+            color: #ffffff;
         }
-        .button-group {
+        .btn-container {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
@@ -67,27 +68,20 @@
             min-width: 150px;
             text-align: center;
             padding: 12px 0;
+            border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 6px;
-            transition: transform 0.2s, opacity 0.2s;
-        }
-        .btn:hover {
-            transform: translateY(-2px);
-            opacity: 0.8;
+            transition: opacity 0.3s;
+            color: #000000;
         }
         .btn-amazon {
             background-color: #ffd700;
-            color: #000000;
         }
         .btn-rakuten {
-            background-color: transparent;
-            color: #ffd700;
-            border: 1px solid #ffd700;
+            background-color: #ffd700;
         }
-        @media (max-width: 600px) {
-            h1 { font-size: 1.4rem; }
-            .product-title { font-size: 1.2rem; }
+        .btn:hover {
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -96,50 +90,48 @@
 <div class="container">
     <header>
         <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月24日 5時の超お得なセール品！</h1>
+        <h1>【楽天市場・Amazon】2026年2月24日 6時の超お得なセール品！</h1>
     </header>
 
     <!-- 商品1 -->
-    <div class="product-card">
-        <div class="product-title">【35%OFF】静寂の極み、次世代ノイズキャンセリングヘッドホン</div>
-        <div class="benefit">騒音を消し去り、あらゆる場所をあなただけの最高級コンサートホールに変える。</div>
-        <div class="reason">
-            最新モデルが24時間限定の過去最安値を更新。これまでにない静寂を手に入れ、<br>
-            仕事の集中力と移動時間の幸福度を劇的に引き上げる絶好の機会です。
-        </div>
-        <div class="button-group">
+    <div class="card">
+        <div class="product-title">【45%OFF】次世代ノイズキャンセリングヘッドホン Ultra Silence</div>
+        <p class="benefit">騒音を消し去り、自分だけの完璧な静寂と音楽に包まれる未来を。</p>
+        <p class="reason">
+            数年に一度の歴史的安値を更新中。今すぐ手に入れれば、明日からの通勤・作業時間が最高のリラックスタイムへと激変します。
+        </p>
+        <div class="btn-container">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
     </div>
 
     <!-- 商品2 -->
-    <div class="product-card">
-        <div class="product-title">【ポイント20倍】未来を身に纏う。最新型フラッグシップ・スマートウォッチ</div>
-        <div class="benefit">専属の健康コンシェルジュが、あなたの心身のパフォーマンスを24時間最適化する。</div>
-        <div class="reason">
-            楽天ポイント大幅還元により実質価格が崩壊中。健康への投資を迷っていたなら、<br>
-            この驚異的な還元率を誇る「今」こそが、人生を変えるガジェットを手に入れるべき時です。
-        </div>
-        <div class="button-group">
+    <div class="card">
+        <div class="product-title">【ポイント20倍】超高速M.2 SSD 4TB Gen5対応モデル</div>
+        <p class="benefit">読み込み待ちをゼロにし、クリエイティビティを限界まで加速させる。</p>
+        <p class="reason">
+            実質価格が過去最安値を下回るポイント還元率。在庫が極少となっているため、PC環境を劇的に改善したい方はこの瞬間がラストチャンスです。
+        </p>
+        <div class="btn-container">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
     </div>
 
     <!-- 商品3 -->
-    <div class="product-card">
-        <div class="product-title">【40%OFF】創造性を加速させる、超高速ワイヤレスメカニカルキーボード</div>
-        <div class="benefit">指先から奏でる心地よい打鍵感が、毎日のタイピングを至福のクリエイティブ体験に。</div>
-        <div class="reason">
-            Amazonの特選タイムセールで、通常では考えられない割引率が適用中。<br>
-            生産性を極限まで高める最高峰の入力デバイスを、在庫が尽きる前に確保してください。
-        </div>
-        <div class="button-group">
+    <div class="card">
+        <div class="product-title">【30%OFF】スマートウォッチ Pro Connect 2026</div>
+        <p class="benefit">あなたの専属医師が手首に。一生涯の健康とスマートな生産性を手にする。</p>
+        <p class="reason">
+            最新OSアップデートを記念した期間限定セール。健康管理の自動化により、無駄な体調不安から解放され、仕事に100%集中できる生活が手に入ります。
+        </p>
+        <div class="btn-container">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
     </div>
+
 </div>
 
 </body>
