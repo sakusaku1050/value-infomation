@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Information</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffd700;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .site-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 20px 0 40px;
+        }
+        .product-card {
+            background-color: #111;
+            border: 1px solid #ffd700;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+        }
+        .product-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-left: 4px solid #ffd700;
+            padding-left: 15px;
+        }
+        .benefit {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .reason {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            color: #fff; /* 読みやすさのため一部白 */
+        }
+        .button-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            padding: 12px 0;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            border: 1px solid #ffd700;
+        }
+        .btn-amazon {
+            background-color: transparent;
+            color: #ffd700;
+        }
+        .btn-rakuten {
+            background-color: #ffd700;
+            color: #000;
+        }
+        .btn:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 600px) {
+            .button-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="site-name">Value Information</div>
+    </header>
+
+    <h1>【楽天市場・Amazon】2026年2月24日 4時の超お得なセール品！</h1>
+
+    <!-- 商品カード1 -->
+    <div class="product-card">
+        <div class="product-title">【30%OFF】次世代フラッグシップスマホ Pro Max</div>
+        <div class="description">
+            <span class="benefit">圧倒的な処理速度で、あなたの創造性を解き放つ自由を。</span>
+            <p class="reason">
+                モデルチェンジ前の在庫一掃セールにより、過去最安値を更新しています。<br>
+                このスペックがこの価格で手に入るのは今だけであり、即完売が予想されます。
+            </p>
+        </div>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+        </div>
+    </div>
+
+    <!-- 商品カード2 -->
+    <div class="product-card">
+        <div class="product-title">【ポイント20倍】究極のノイズキャンセリングヘッドホン Elite X</div>
+        <div class="description">
+            <span class="benefit">騒音を消し去り、一瞬で自分だけの静寂なコンサートホールへ。</span>
+            <p class="reason">
+                現在実施中のポイント還元キャンペーンを適用すれば、実質価格で他店を圧倒します。<br>
+                テレワークや移動時間を極上の体験に変えるなら、このポイント倍率を逃す手はありません。
+            </p>
+        </div>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+        </div>
+    </div>
+
+    <!-- 商品カード3 -->
+    <div class="product-card">
+        <div class="product-title">【45%OFF】超高速充電対応・大容量モバイルバッテリー</div>
+        <div class="description">
+            <span class="benefit">電池残量の不安から解放され、スマートな1日を約束する。</span>
+            <p class="reason">
+                期間限定のフラッシュセール対象となっており、通常価格のほぼ半額で購入可能です。<br>
+                防災用としても需要が高まっており、在庫があるうちに確保しておくべき逸品です。
+            </p>
+        </div>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
