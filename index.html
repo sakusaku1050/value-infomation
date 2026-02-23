@@ -3,216 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>漆黒と黄金の逸品 - Amazonおすすめガジェット</title>
+    <title>Value Information - お買い得ガジェット紹介</title>
     <style>
         body {
             background-color: #000000;
-            color: #ffffff;
-            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            color: #ffd700;
+            font-family: 'Times New Roman', "MS P明朝", "MS PMincho", "Hiragino Mincho ProN", serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
-
-        header {
-            background: linear-gradient(to bottom, #1a1a1a, #000000);
-            padding: 50px 20px;
-            text-align: center;
-            border-bottom: 2px solid #d4af37;
-        }
-
-        h1 {
-            color: #d4af37;
-            font-size: 2.5rem;
-            margin: 0;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
-            letter-spacing: 0.1em;
-        }
-
-        p.intro {
-            max-width: 800px;
-            margin: 20px auto;
-            color: #e0e0e0;
-            font-size: 1.1rem;
-        }
-
         .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
-
-        .card {
-            background-color: #0a0a0a;
-            border: 1px solid #d4af37;
-            border-radius: 10px;
+        header {
+            text-align: center;
+            border-bottom: 2px solid #ffd700;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+        }
+        .site-name {
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin: 40px 0;
+            text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.3);
+        }
+        h2 {
+            border-left: 5px solid #ffd700;
+            padding-left: 15px;
+            margin-top: 50px;
+            font-size: 1.6rem;
+        }
+        .intro-text, .summary-text {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            text-align: justify;
+            background: rgba(255, 215, 0, 0.05);
             padding: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 8px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .product-card {
+            border: 1px solid #ffd700;
+            padding: 20px;
+            background: linear-gradient(145deg, #0f0f0f, #000000);
+            border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
-
-        .card:hover {
-            transform: translateY(-50px);
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
         }
-
-        .card-title {
-            color: #d4af37;
-            font-size: 1.4rem;
+        .product-title {
+            font-size: 1.2rem;
             font-weight: bold;
             margin-bottom: 15px;
-            border-bottom: 1px solid #d4af37;
-            padding-bottom: 10px;
+            height: 3.6em;
+            overflow: hidden;
         }
-
-        .card-description {
-            color: #cccccc;
-            font-size: 0.95rem;
+        .product-description {
+            font-size: 0.9rem;
+            color: #f0e68c;
             margin-bottom: 20px;
         }
-
-        .price-tag {
-            color: #ffffff;
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-            display: block;
-            text-align: right;
+        .button-group {
+            display: flex;
+            gap: 10px;
         }
-
-        .amazon-button {
-            display: block;
+        .btn {
+            flex: 1;
             text-align: center;
-            background: linear-gradient(45deg, #d4af37, #f9f295, #d4af37);
-            color: #000;
+            padding: 10px 0;
             text-decoration: none;
-            padding: 10px;
-            border-radius: 5px;
             font-weight: bold;
+            font-size: 0.8rem;
+            border-radius: 5px;
             transition: opacity 0.3s;
         }
-
-        .amazon-button:hover {
-            opacity: 0.8;
+        .btn-amazon {
+            background-color: #ffd700;
+            color: #000;
         }
-
+        .btn-rakuten {
+            border: 1px solid #ffd700;
+            color: #ffd700;
+        }
+        .btn:hover {
+            opacity: 0.8;
+            filter: brightness(1.2);
+        }
         footer {
             text-align: center;
-            padding: 40px 20px;
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 215, 0, 0.3);
             font-size: 0.8rem;
-            color: #666;
-            border-top: 1px solid #333;
-        }
-
-        .gold-text {
-            color: #d4af37;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>漆黒と黄金の逸品</h1>
-    <p class="intro">
-        Amazonで見つけた、毎日の生活を少し贅沢に変えてくれるお得なガジェットを厳選しました。<br>
-        使いやすさと見た目の美しさを兼ね備えた、選りすぐりの6点をご紹介します。
-    </p>
-</header>
-
 <div class="container">
-    <!-- ガジェット 1 -->
-    <div class="card">
-        <div>
-            <div class="card-title">静寂を届けるヘッドホン</div>
-            <p class="card-description">
-                周りの音をすっと消して、大好きな音楽だけに浸れる魔法のようなヘッドホンです。耳を優しく包み込むクッションが、長時間の移動やデスクワークを快適な癒やしの時間に変えてくれます。
-            </p>
+    <header>
+        <div class="site-name">Value Information</div>
+    </header>
+
+    <h1>【楽天市場・Amazon】2026年2月23日 23時のお買い得品をご紹介！</h1>
+
+    <section>
+        <h2>2026年2月23日 23時のお買い得商品6選</h2>
+        <p class="intro-text">
+            今、この瞬間、最高級の価値を手に入れるチャンスが到来しました！2026年2月23日23時、楽天市場とAmazonから厳選された、妥協なき性能を誇る至高のガジェット6選をお届けします。最新技術が凝縮された逸品たちが、驚愕のプライスであなたの手に。手にした瞬間に生活の質が変わる、そんな圧倒的な高揚感を約束するラインナップです。在庫は僅か、早い者勝ちの祭典。今すぐその目で、時代を凌駕する価値を確かめてください！
+        </p>
+    </section>
+
+    <div class="product-grid">
+        <!-- 商品1 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">次世代フラッグシップ スマートフォン Pro Max</div>
+                <p class="product-description">圧倒的な処理速度と芸術的なカメラ性能。未来をその手に収める至高の1台。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
         </div>
-        <div>
-            <span class="price-tag">機能美を極めた、今だけの特別価格</span>
-            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
+
+        <!-- 商品2 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">究極のノイズキャンセリング ヘッドホン</div>
+                <p class="product-description">静寂の中で響く、純粋な音の輝き。日常を劇場に変える魔法のオーディオ。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
+        </div>
+
+        <!-- 商品3 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">4K/240Hz 超高解像度 ゲーミングモニター</div>
+                <p class="product-description">現実を超える色彩と滑らかさ。勝利を確実にするための、プロ仕様の視覚体験。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
+        </div>
+
+        <!-- 商品4 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">高級メカニカル キーボード Elite Edition</div>
+                <p class="product-description">指先から伝わる至福の打鍵感。美しさと機能性を兼ね備えたデスクの芸術品。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
+        </div>
+
+        <!-- 商品5 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">スマートウォッチ Titanium Luxury</div>
+                <p class="product-description">健康管理もステータスもこれ一つで。チタンボディが放つ唯一無二の存在感。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
+        </div>
+
+        <!-- 商品6 -->
+        <div class="product-card">
+            <div>
+                <div class="product-title">大容量ポータブル電源 プレミアムモデル</div>
+                <p class="product-description">非常時もアウトドアも、これさえあれば安心。圧倒的な電力を、優雅なデザインで。</p>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天で見る</a>
+            </div>
         </div>
     </div>
 
-    <!-- ガジェット 2 -->
-    <div class="card">
-        <div>
-            <div class="card-title">腕に輝く健康パートナー</div>
-            <p class="card-description">
-                時計を見るだけで、歩いた歩数や眠りの深さがひと目でわかります。スマホに届いた大事なメッセージも見逃しません。漆黒の画面に浮かび上がる文字が、あなたの手元を美しく彩ります。
-            </p>
-        </div>
-        <div>
-            <span class="price-tag">日常をスマートに彩る人気モデル</span>
-            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
-        </div>
-    </div>
+    <section>
+        <h2>お得なアイテムをチェックしよう！</h2>
+        <p class="summary-text">
+            いかがでしたでしょうか。今回ご紹介した6つのアイテムは、どれも2026年の最前線を走る、まさに選ばれし者のためのガジェットです。価格以上の価値、そして所有することの悦びを、ぜひこの機会に味わってください。楽天市場とAmazonのセールは時間との戦いです。迷っている間に完売してしまうことも珍しくありません。あなたのライフスタイルを劇的に進化させる最高の一品を、今すぐ手に入れ、輝かしい明日を迎えましょう！
+        </p>
+    </section>
 
-    <!-- ガジェット 3 -->
-    <div class="card">
-        <div>
-            <div class="card-title">手のひらサイズの映画館</div>
-            <p class="card-description">
-                白い壁さえあれば、そこが映画館に早変わり。コンパクトなのに驚くほど鮮やかで大きな映像を映し出せます。週末の夜、お部屋を暗くしてゆったりと映画を楽しむ贅沢を味わってみませんか。
-            </p>
-        </div>
-        <div>
-            <span class="price-tag">驚きの美しさを、驚きの価格で</span>
-            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
-        </div>
-    </div>
-
-    <!-- ガジェット 4 -->
-    <div class="card">
-        <div>
-            <div class="card-title">魔法の板状バッテリー</div>
-            <p class="card-description">
-                スマホの充電が切れそうな時も、これがあれば安心です。薄くて軽いのでバッグの中でもかさばりません。いざという時のためのお守りとして、一歩先行く安心を身にまとってみてください。
-            </p>
-        </div>
-        <div>
-            <span class="price-tag">もしもの時の、頼れる黄金の味方</span>
-            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
-        </div>
-    </div>
-
-    <!-- ガジェット 5 -->
-    <div class="card">
-        <div>
-            <div class="card-title">光り輝く高速読書機</div>
-            <p class="card-description">
-                何千冊もの本をこの一枚に。本物の紙のような優しい画面は、長い時間読んでも目が疲れにくいのが特徴です。お風呂でも使えるので、自分だけの至福の読書タイムを心ゆくまで楽しめます。
-            </p>
-        </div>
-        <div>
-            <span class="price-tag">読書好きに贈る、最高の贈り物</span>
-            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
-        </div>
-    </div>
-
-    <!-- ガジェット 6 -->
-    <div class="card">
-        <div>
-            <div class="card-title">未来を照らす充電台</div>
-            <p class="card-description">
-                スマホを置くだけで、スッと充電が始まります。ケーブルを抜き差しする手間はもういりません。デスクに置いておくだけで、まるでインテリアのような高級感を演出してくれる美しいデザインです。
-            </p>
-        </div>
-        <div>
-            <span class="price-tag">利便性と美しさが調和した一品</span>
-            <a href="#" class="amazon-button">Amazonで詳細を見る</a>
-        </div>
-    </div>
+    <footer>
+        &copy; 2026 Value Information. All Rights Reserved.
+    </footer>
 </div>
-
-<footer>
-    <p>© 2023 漆黒と黄金のガジェットセレクション<br>
-    ※価格は常に変動いたします。最新の情報はAmazon公式サイトにてご確認ください。</p>
-</footer>
 
 </body>
 </html>
