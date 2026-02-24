@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information - セール情報</title>
+    <title>Value Information - セール速報</title>
     <style>
         body {
             background-color: #000000;
             color: #ffd700;
-            font-family: 'Helvetica Neue', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
             margin: 0;
             padding: 20px;
             line-height: 1.6;
@@ -27,39 +27,35 @@
             font-size: 1.2rem;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            margin-bottom: 10px;
         }
         h1 {
             font-size: 1.8rem;
-            margin: 0;
-            font-weight: bold;
+            margin-top: 10px;
         }
-        .card {
+        .product-card {
             background-color: #111111;
             border: 1px solid #ffd700;
             border-radius: 12px;
-            padding: 30px;
+            padding: 25px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
-        .product-heading {
+        h2 {
             font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            border-left: 5px solid #ffd700;
+            margin-top: 0;
+            border-left: 4px solid #ffd700;
             padding-left: 15px;
         }
         .benefit {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: bold;
+            margin: 15px 0;
             color: #ffffff;
-            margin-bottom: 15px;
-            display: block;
         }
         .reason {
-            font-size: 0.95rem;
-            color: #e0e0e0;
             margin-bottom: 25px;
+            color: #ffd700;
+            opacity: 0.9;
         }
         .button-container {
             display: flex;
@@ -68,31 +64,32 @@
         }
         .btn {
             flex: 1;
+            min-width: 160px;
             text-align: center;
-            padding: 12px 20px;
-            border-radius: 6px;
+            padding: 12px 0;
             text-decoration: none;
             font-weight: bold;
+            border-radius: 6px;
             transition: all 0.3s ease;
-            min-width: 160px;
+            border: 1px solid #ffd700;
         }
         .btn-amazon {
+            background-color: transparent;
+            color: #ffd700;
+        }
+        .btn-rakuten {
             background-color: #ffd700;
             color: #000000;
         }
-        .btn-rakuten {
-            background-color: transparent;
-            color: #ffd700;
-            border: 1px solid #ffd700;
-        }
         .btn:hover {
-            opacity: 0.8;
             transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
         }
-        @media (max-width: 600px) {
-            h1 { font-size: 1.4rem; }
-            .product-heading { font-size: 1.2rem; }
-            .button-container { flex-direction: column; }
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            margin-top: 50px;
+            opacity: 0.6;
         }
     </style>
 </head>
@@ -101,28 +98,54 @@
 <div class="container">
     <header>
         <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月24日 17時の超お得なセール品！</h1>
+        <h1>【楽天市場・Amazon】2026年2月24日 18時の超お得なセール品！</h1>
     </header>
 
-    <article class="card">
-        <div class="product-heading">【45%OFF】次世代ノイズキャンセリングヘッドホン EliteSound Pro</div>
-        <span class="benefit">騒音を消し去り、一瞬で自分だけの極上シアター空間へ。</span>
-        <p class="reason">過去最安値を更新した今、最高級の静寂を手に入れる絶好のチャンスです。<br>この限定価格は在庫がなくなり次第終了となるため、早めの確保を推奨します。</p>
+    <!-- 商品カード 1 -->
+    <div class="product-card">
+        <h2>【45%OFF】次世代ノイズキャンセリングヘッドホン SonicShield Pro</h2>
+        <p class="benefit">喧騒を完全に遮断し、自分だけの極上の音楽体験を。</p>
+        <p class="reason">
+            最新のAIノイズカット機能が、これまでにない深い静寂を提供します。<br>
+            期間限定の大幅値引きにより、フラッグシップ機がエントリーモデル並みの価格で入手可能です。
+        </p>
         <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+            <a href="#" class="btn btn-amazon">Amazonで見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
-    </article>
+    </div>
 
-    <article class="card">
-        <div class="product-heading">【ポイント20倍】超高速M.2 SSD 4TB Gen5対応モデル</div>
-        <span class="benefit">待ち時間をゼロへ。あなたのPCがプロ仕様の爆速ワークステーションに進化する。</span>
-        <p class="reason">実質価格が数万円単位で下がるポイント還元祭は、大容量ストレージを買う唯一の正解タイミングです。<br>データ肥大化が進む今、このスペックをこの価格で手に入れられる機会は二度とありません。</p>
+    <!-- 商品カード 2 -->
+    <div class="product-card">
+        <h2>【ポイント20倍】超高速充電対応モバイルバッテリー 20000mAh</h2>
+        <p class="benefit">バッテリー残量の悩みから解放され、自由な移動をあなたの手に。</p>
+        <p class="reason">
+            ノートPCも充電可能な高出力モデルが、今だけ実質過去最安値を更新中です。<br>
+            ポイント還元を含めると実質数千円引きとなる、この絶好の機会を逃さないでください。
+        </p>
         <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+            <a href="#" class="btn btn-amazon">Amazonで見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
-    </article>
+    </div>
+
+    <!-- 商品カード 3 -->
+    <div class="product-card">
+        <h2>【30%OFF】AI搭載スマートウォッチ Vision G2</h2>
+        <p class="benefit">手首の上が有能な秘書に。健康と仕事のパフォーマンスを最大化する。</p>
+        <p class="reason">
+            次世代センサー搭載の最新モデルが、在庫一掃の特別セールに初登場しました。<br>
+            ビジネスからフィットネスまでこなす万能機が、この価格で手に入るのは今夜限りです。
+        </p>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Value Information. All rights reserved.
+    </footer>
 </div>
 
 </body>
