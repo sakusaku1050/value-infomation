@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information - セール速報</title>
     <style>
         body {
             background-color: #000000;
@@ -20,42 +19,43 @@
         header {
             text-align: center;
             border-bottom: 2px solid #ffd700;
-            padding-bottom: 20px;
-            margin-bottom: 40px;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
         }
         .site-name {
             font-size: 1.2rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
+            letter-spacing: 0.1em;
         }
         h1 {
-            font-size: 1.8rem;
-            margin-top: 10px;
+            font-size: 1.5rem;
+            margin: 20px 0;
+            text-align: center;
         }
         .product-card {
-            background-color: #111111;
             border: 1px solid #ffd700;
-            border-radius: 12px;
+            border-radius: 10px;
             padding: 25px;
             margin-bottom: 30px;
+            background-color: rgba(255, 215, 0, 0.05);
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
-        h2 {
-            font-size: 1.5rem;
+        .product-title {
+            font-size: 1.3rem;
+            font-weight: bold;
             margin-top: 0;
+            margin-bottom: 15px;
             border-left: 4px solid #ffd700;
             padding-left: 15px;
         }
         .benefit {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
-            margin: 15px 0;
-            color: #ffffff;
+            margin-bottom: 10px;
+            display: block;
         }
         .reason {
-            margin-bottom: 25px;
-            color: #ffd700;
-            opacity: 0.9;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
         }
         .button-container {
             display: flex;
@@ -64,32 +64,26 @@
         }
         .btn {
             flex: 1;
-            min-width: 160px;
+            min-width: 150px;
             text-align: center;
             padding: 12px 0;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 6px;
+            border-radius: 5px;
             transition: all 0.3s ease;
             border: 1px solid #ffd700;
         }
         .btn-amazon {
-            background-color: transparent;
-            color: #ffd700;
-        }
-        .btn-rakuten {
             background-color: #ffd700;
             color: #000000;
         }
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        .btn-rakuten {
+            background-color: transparent;
+            color: #ffd700;
         }
-        footer {
-            text-align: center;
-            font-size: 0.8rem;
-            margin-top: 50px;
-            opacity: 0.6;
+        .btn:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -98,16 +92,16 @@
 <div class="container">
     <header>
         <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月24日 18時の超お得なセール品！</h1>
     </header>
 
-    <!-- 商品カード 1 -->
+    <h1>【楽天市場・Amazon】2026年2月24日 19時の超お得なセール品！</h1>
+
+    <!-- 商品カード1 -->
     <div class="product-card">
-        <h2>【45%OFF】次世代ノイズキャンセリングヘッドホン SonicShield Pro</h2>
-        <p class="benefit">喧騒を完全に遮断し、自分だけの極上の音楽体験を。</p>
+        <div class="product-title">【45%OFF】究極のノイズキャンセリングヘッドホン Pro X</div>
+        <p class="benefit">騒音を消し去り、一瞬で自分だけの静寂なコンサートホールへ。</p>
         <p class="reason">
-            最新のAIノイズカット機能が、これまでにない深い静寂を提供します。<br>
-            期間限定の大幅値引きにより、フラッグシップ機がエントリーモデル並みの価格で入手可能です。
+            過去12ヶ月で最安値を更新。この価格で購入できるのは在庫限りのタイムセール中のみです。
         </p>
         <div class="button-container">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
@@ -115,13 +109,12 @@
         </div>
     </div>
 
-    <!-- 商品カード 2 -->
+    <!-- 商品カード2 -->
     <div class="product-card">
-        <h2>【ポイント20倍】超高速充電対応モバイルバッテリー 20000mAh</h2>
-        <p class="benefit">バッテリー残量の悩みから解放され、自由な移動をあなたの手に。</p>
+        <div class="product-title">【ポイント20倍】次世代スマートウォッチ Ultra Gen 3</div>
+        <p class="benefit">腕元に専属のパーソナルトレーナーを。あなたの健康管理を自動化する。</p>
         <p class="reason">
-            ノートPCも充電可能な高出力モデルが、今だけ実質過去最安値を更新中です。<br>
-            ポイント還元を含めると実質数千円引きとなる、この絶好の機会を逃さないでください。
+            実質2万円以上の還元。最新モデルが発売された今だからこそ、最強のコストパフォーマンスを発揮します。
         </p>
         <div class="button-container">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
@@ -129,23 +122,18 @@
         </div>
     </div>
 
-    <!-- 商品カード 3 -->
+    <!-- 商品カード3 -->
     <div class="product-card">
-        <h2>【30%OFF】AI搭載スマートウォッチ Vision G2</h2>
-        <p class="benefit">手首の上が有能な秘書に。健康と仕事のパフォーマンスを最大化する。</p>
+        <div class="product-title">【50%OFF】超高速SSD搭載 外付けポータブルドライブ 2TB</div>
+        <p class="benefit">データの待ち時間をゼロに。あなたの創造性を一秒も止めない。</p>
         <p class="reason">
-            次世代センサー搭載の最新モデルが、在庫一掃の特別セールに初登場しました。<br>
-            ビジネスからフィットネスまでこなす万能機が、この価格で手に入るのは今夜限りです。
+            半導体価格高騰前のラストチャンス。大容量2TBモデルが、通常の1TBモデルと同等の価格まで暴落中です。
         </p>
         <div class="button-container">
             <a href="#" class="btn btn-amazon">Amazonで見る</a>
             <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
         </div>
     </div>
-
-    <footer>
-        &copy; 2026 Value Information. All rights reserved.
-    </footer>
 </div>
 
 </body>
