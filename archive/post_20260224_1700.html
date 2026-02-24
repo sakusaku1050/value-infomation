@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Information - セール情報</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffd700;
+            font-family: 'Helvetica Neue', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        .site-name {
+            font-size: 1.2rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: bold;
+        }
+        .card {
+            background-color: #111111;
+            border: 1px solid #ffd700;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.1);
+        }
+        .product-heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-left: 5px solid #ffd700;
+            padding-left: 15px;
+        }
+        .benefit {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .reason {
+            font-size: 0.95rem;
+            color: #e0e0e0;
+            margin-bottom: 25px;
+        }
+        .button-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            flex: 1;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            min-width: 160px;
+        }
+        .btn-amazon {
+            background-color: #ffd700;
+            color: #000000;
+        }
+        .btn-rakuten {
+            background-color: transparent;
+            color: #ffd700;
+            border: 1px solid #ffd700;
+        }
+        .btn:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.4rem; }
+            .product-heading { font-size: 1.2rem; }
+            .button-container { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="site-name">Value Information</div>
+        <h1>【楽天市場・Amazon】2026年2月24日 17時の超お得なセール品！</h1>
+    </header>
+
+    <article class="card">
+        <div class="product-heading">【45%OFF】次世代ノイズキャンセリングヘッドホン EliteSound Pro</div>
+        <span class="benefit">騒音を消し去り、一瞬で自分だけの極上シアター空間へ。</span>
+        <p class="reason">過去最安値を更新した今、最高級の静寂を手に入れる絶好のチャンスです。<br>この限定価格は在庫がなくなり次第終了となるため、早めの確保を推奨します。</p>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="product-heading">【ポイント20倍】超高速M.2 SSD 4TB Gen5対応モデル</div>
+        <span class="benefit">待ち時間をゼロへ。あなたのPCがプロ仕様の爆速ワークステーションに進化する。</span>
+        <p class="reason">実質価格が数万円単位で下がるポイント還元祭は、大容量ストレージを買う唯一の正解タイミングです。<br>データ肥大化が進む今、このスペックをこの価格で手に入れられる機会は二度とありません。</p>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+        </div>
+    </article>
+</div>
+
+</body>
+</html>
