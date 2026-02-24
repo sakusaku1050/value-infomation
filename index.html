@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information - 超お得セール情報</title>
+    <title>Value Information - セール情報</title>
     <style>
         body {
             background-color: #000000;
@@ -30,12 +30,12 @@
         }
         h1 {
             font-size: 1.8rem;
-            margin-top: 10px;
+            margin: 10px 0;
         }
-        .product-card {
-            background-color: #0a0a0a;
+        .card {
+            background-color: #111111;
             border: 1px solid #ffd700;
-            border-radius: 8px;
+            border-radius: 12px;
             padding: 25px;
             margin-bottom: 30px;
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
@@ -47,45 +47,45 @@
             padding-left: 15px;
         }
         .benefit {
-            font-size: 1.2rem;
             font-weight: bold;
+            font-size: 1.1rem;
             margin-bottom: 15px;
-            color: #ffffff;
+            display: block;
         }
         .reason {
+            font-size: 0.95rem;
             margin-bottom: 25px;
+            color: #ffffff;
         }
         .button-container {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 15px;
-            flex-wrap: wrap;
         }
         .btn {
-            flex: 1;
-            min-width: 200px;
+            display: block;
             text-align: center;
-            padding: 12px 0;
+            padding: 12px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 4px;
+            border-radius: 5px;
             transition: opacity 0.3s;
         }
         .btn-amazon {
-            background-color: #ffd700;
-            color: #000000;
+            background-color: #ff9900;
+            color: #000;
         }
         .btn-rakuten {
-            background-color: transparent;
-            color: #ffd700;
-            border: 1px solid #ffd700;
+            background-color: #bf0000;
+            color: #fff;
         }
         .btn:hover {
             opacity: 0.8;
         }
         @media (max-width: 600px) {
-            h1 { font-size: 1.4rem; }
-            h2 { font-size: 1.2rem; }
-            .btn { width: 100%; }
+            .button-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -94,50 +94,51 @@
 <div class="container">
     <header>
         <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月24日 9時の超お得なセール品！</h1>
+        <h1>【楽天市場・Amazon】2026年2月24日 10時の超お得なセール品！</h1>
     </header>
 
     <!-- 商品1 -->
-    <article class="product-card">
-        <h2>【45%OFF】次世代ノイズキャンセリングヘッドホン UltraQuiet Gen.3</h2>
-        <p class="benefit">騒音を消し去り、自分だけの静寂を。</p>
+    <div class="card">
+        <h2>【30%OFF】次世代フラッグシップスマホ Ultra Vision G1</h2>
+        <span class="benefit">全ての瞬間をプロの映画のように、一生の記憶を美しく。</span>
         <p class="reason">
-            集中力が途切れない究極の作業環境が手に入り、どんな場所でもプライベートシアターのような没入感を体験できます。<br>
-            24時間限定のタイムセールにより過去最安値を更新しており、今この瞬間が最も安く手に入れるチャンスです。
+            最新CPU搭載モデルが今回初めて3割引きの過去最安値を更新しました。<br>
+            このスペックをこの価格で手にできるチャンスは、在庫限りの今だけです。
         </p>
         <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+            <a href="#" class="btn btn-amazon">Amazonでチェック</a>
+            <a href="#" class="btn btn-rakuten">楽天でチェック</a>
         </div>
-    </article>
+    </div>
 
     <!-- 商品2 -->
-    <article class="product-card">
-        <h2>【20%ポイント還元】超薄型ハイスペックタブレット Pro Air 13</h2>
-        <p class="benefit">重いパソコンを持ち歩く苦痛から、永遠に解放される。</p>
+    <div class="card">
+        <h2>【ポイント20倍】ノイズキャンセリングヘッドホン Silence Pro</h2>
+        <span class="benefit">喧騒を消し去り、あなただけの極上の静寂と音楽空間を。</span>
         <p class="reason">
-            驚異的な軽さとプロ級の処理速度を両立し、カフェや移動中が最高のクリエイティブスタジオに生まれ変わります。<br>
-            楽天お買い物マラソンと連動したポイント還元により、実質価格で他店を圧倒する驚愕のコストパフォーマンスを実現しています。
+            実質価格が市場相場を大きく下回る、期間限定の大幅ポイント還元中です。<br>
+            リモートワークの集中力を劇的に高める最高峰のデバイスが、今なら手に入ります。
         </p>
         <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+            <a href="#" class="btn btn-amazon">Amazonでチェック</a>
+            <a href="#" class="btn btn-rakuten">楽天でチェック</a>
         </div>
-    </article>
+    </div>
 
     <!-- 商品3 -->
-    <article class="product-card">
-        <h2>【30%OFF】メカニカルゲーミングキーボード Stealth Type</h2>
-        <p class="benefit">指先から伝わる快感が、毎日のタイピングを喜びに変える。</p>
+    <div class="card">
+        <h2>【45%OFF】次世代スマートウォッチ Active Life X</h2>
+        <span class="benefit">自分の身体を完璧に可視化し、理想の健康状態をコントロール。</span>
         <p class="reason">
-            極上の打鍵感によりタイピング速度が向上し、長時間のデスクワークでも驚くほど指が疲れにくくなります。<br>
-            Amazonの特選タイムセール対象となっており、通常価格では到底手の届かないプレミアムモデルが今だけ手頃な価格です。
+            春の新作発表を前に、現行の最上位モデルが驚異の半額近いプライスダウンです。<br>
+            24時間の体調管理を自動化するパートナーを、最も賢く購入できる絶好のタイミングです。
         </p>
         <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+            <a href="#" class="btn btn-amazon">Amazonでチェック</a>
+            <a href="#" class="btn btn-rakuten">楽天でチェック</a>
         </div>
-    </article>
+    </div>
+
 </div>
 
 </body>
