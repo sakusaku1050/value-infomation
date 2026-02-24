@@ -3,79 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information - セール情報</title>
+    <title>Value Information - 超お得セール情報</title>
     <style>
         body {
             background-color: #000000;
             color: #ffd700;
-            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-            line-height: 1.6;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
             margin: 0;
             padding: 20px;
+            line-height: 1.6;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
         }
         header {
-            text-align: left;
+            text-align: center;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        .site-name {
             font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ffd700;
-            padding-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         h1 {
-            text-align: center;
             font-size: 1.8rem;
-            margin-bottom: 40px;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            margin-top: 10px;
         }
-        .card {
-            background-color: #111111;
+        .product-card {
+            background-color: #0a0a0a;
             border: 1px solid #ffd700;
-            border-radius: 12px;
+            border-radius: 8px;
             padding: 25px;
             margin-bottom: 30px;
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
-        .product-title {
-            font-size: 1.4rem;
-            font-weight: bold;
+        h2 {
+            font-size: 1.5rem;
             margin-top: 0;
-            margin-bottom: 15px;
             border-left: 4px solid #ffd700;
             padding-left: 15px;
         }
         .benefit {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: bold;
             margin-bottom: 15px;
-            display: block;
-        }
-        .reason {
-            font-size: 0.95rem;
-            margin-bottom: 20px;
             color: #ffffff;
         }
-        .button-group {
+        .reason {
+            margin-bottom: 25px;
+        }
+        .button-container {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
         .btn {
             flex: 1;
-            min-width: 150px;
+            min-width: 200px;
             text-align: center;
             padding: 12px 0;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 6px;
-            transition: transform 0.2s, opacity 0.2s;
-        }
-        .btn:hover {
-            transform: translateY(-2px);
-            opacity: 0.9;
+            border-radius: 4px;
+            transition: opacity 0.3s;
         }
         .btn-amazon {
             background-color: #ffd700;
@@ -86,61 +79,65 @@
             color: #ffd700;
             border: 1px solid #ffd700;
         }
+        .btn:hover {
+            opacity: 0.8;
+        }
         @media (max-width: 600px) {
             h1 { font-size: 1.4rem; }
-            .product-title { font-size: 1.2rem; }
+            h2 { font-size: 1.2rem; }
+            .btn { width: 100%; }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <header>Value Information</header>
-    
-    <h1>【楽天市場・Amazon】2026年2月24日 8時の超お得なセール品！</h1>
+    <header>
+        <div class="site-name">Value Information</div>
+        <h1>【楽天市場・Amazon】2026年2月24日 9時の超お得なセール品！</h1>
+    </header>
 
-    <!-- 商品カード1 -->
-    <div class="card">
-        <h2 class="product-title">【45%OFF】次世代ノイズキャンセリングヘッドホン Elite Pro X</h2>
-        <p class="benefit">騒音を消し去り、瞬時にあなただけの極上リスニングルームへ。</p>
+    <!-- 商品1 -->
+    <article class="product-card">
+        <h2>【45%OFF】次世代ノイズキャンセリングヘッドホン UltraQuiet Gen.3</h2>
+        <p class="benefit">騒音を消し去り、自分だけの静寂を。</p>
         <p class="reason">
-            過去最安値を更新したこの瞬間に手に入れなければ、次回のセールまで数ヶ月待つことになります。<br>
-            圧倒的な没入感による作業効率の向上は、投資額以上の価値を即座に提供してくれるでしょう。
+            集中力が途切れない究極の作業環境が手に入り、どんな場所でもプライベートシアターのような没入感を体験できます。<br>
+            24時間限定のタイムセールにより過去最安値を更新しており、今この瞬間が最も安く手に入れるチャンスです。
         </p>
-        <div class="button-group">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
-    </div>
+    </article>
 
-    <!-- 商品カード2 -->
-    <div class="card">
-        <h2 class="product-title">【ポイント20倍】超薄型 14インチ M4搭載ノートPC </h2>
-        <p class="benefit">羽のような軽さと圧倒的パワーで、場所を選ばずクリエイティビティを爆発させる。</p>
+    <!-- 商品2 -->
+    <article class="product-card">
+        <h2>【20%ポイント還元】超薄型ハイスペックタブレット Pro Air 13</h2>
+        <p class="benefit">重いパソコンを持ち歩く苦痛から、永遠に解放される。</p>
         <p class="reason">
-            実質価格が旧モデルを下回る逆転現象が発生しており、今このタイミングが最も買い時と言えます。<br>
-            在庫が極端に少なくなっているため、迷っている間に完売する可能性が非常に高い限定セールです。
+            驚異的な軽さとプロ級の処理速度を両立し、カフェや移動中が最高のクリエイティブスタジオに生まれ変わります。<br>
+            楽天お買い物マラソンと連動したポイント還元により、実質価格で他店を圧倒する驚愕のコストパフォーマンスを実現しています。
         </p>
-        <div class="button-group">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
-    </div>
+    </article>
 
-    <!-- 商品カード3 -->
-    <div class="card">
-        <h2 class="product-title">【30%OFF】スマートホーム・ハブ プレミアムエディション</h2>
-        <p class="benefit">一声で家中を操り、あなたの生活を近未来の快適さへアップデート。</p>
+    <!-- 商品3 -->
+    <article class="product-card">
+        <h2>【30%OFF】メカニカルゲーミングキーボード Stealth Type</h2>
+        <p class="benefit">指先から伝わる快感が、毎日のタイピングを喜びに変える。</p>
         <p class="reason">
-            期間限定のクーポン配布により、他店を圧倒する価格設定が実現している今が導入の好機です。<br>
-            日々のルーチンを自動化することで生まれる「自由な時間」は、どんな高級品よりもあなたを豊かにします。
+            極上の打鍵感によりタイピング速度が向上し、長時間のデスクワークでも驚くほど指が疲れにくくなります。<br>
+            Amazonの特選タイムセール対象となっており、通常価格では到底手の届かないプレミアムモデルが今だけ手頃な価格です。
         </p>
-        <div class="button-group">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
-    </div>
-
+    </article>
 </div>
 
 </body>
