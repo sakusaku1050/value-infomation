@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Information</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffd700;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .site-name {
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ffd700;
+            padding-bottom: 10px;
+        }
+
+        .card {
+            background-color: #000000;
+            border: 1px solid #ffd700;
+            border-radius: 8px;
+            padding: 25px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+            box-sizing: border-box;
+        }
+
+        .product-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .benefit {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .reason {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #ffffff; /* 読みやすさのため説明文のみ白に近い色、または黄金色の明度調整 */
+            opacity: 0.9;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-align: center;
+            min-width: 140px;
+            border: 1px solid #ffd700;
+        }
+
+        .btn-amazon {
+            background-color: #ffd700;
+            color: #000000;
+        }
+
+        .btn-rakuten {
+            background-color: transparent;
+            color: #ffd700;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        @media (max-width: 480px) {
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-name">Value Information</div>
+    
+    <h1>【楽天市場・Amazon】2026年2月24日 22時の超お得なセール品！</h1>
+
+    <article class="card">
+        <h2 class="product-title">【45%OFF】次世代ノイズキャンセリングヘッドホン UltraSound Pro</h2>
+        
+        <p class="benefit">雑踏を消し去り、どこにいても自分だけの極上シアタールームを再現する。</p>
+        
+        <p class="reason">
+            今回のタイムセールは過去最安値を大幅に更新しており、在庫がなくなり次第この価格での提供は終了となります。<br>
+            迷っている間に完売する恐れがあるため、今この瞬間の決断が数万円の節約に直結します。
+        </p>
+
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        </div>
+    </article>
+
+</body>
+</html>
