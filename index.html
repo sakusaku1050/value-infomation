@@ -11,133 +11,139 @@
             font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
             margin: 0;
             padding: 20px;
-            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        header {
-            text-align: center;
-            border-bottom: 2px solid #ffd700;
-            padding-bottom: 20px;
-            margin-bottom: 40px;
-        }
+
         .site-name {
             font-size: 1.2rem;
-            letter-spacing: 0.2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
             text-transform: uppercase;
         }
+
         h1 {
-            font-size: 1.8rem;
-            margin: 10px 0;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            max-width: 800px;
         }
+
         .card {
-            background-color: #111111;
+            background-color: #0a0a0a;
             border: 1px solid #ffd700;
-            border-radius: 8px;
+            border-radius: 12px;
             padding: 25px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
             margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
+
         .product-title {
             font-size: 1.4rem;
             font-weight: bold;
-            margin-bottom: 15px;
-            border-left: 4px solid #ffd700;
-            padding-left: 15px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            line-height: 1.4;
         }
-        .benefit {
+
+        .description-benefit {
             font-size: 1.1rem;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             display: block;
         }
-        .reason {
+
+        .description-reason {
             font-size: 0.95rem;
-            margin-bottom: 20px;
-            color: #ffffff;
+            line-height: 1.6;
+            color: #fff8e1;
+            margin-bottom: 25px;
         }
+
         .button-container {
             display: flex;
             gap: 15px;
-            flex-wrap: wrap;
+            justify-content: center;
         }
+
         .btn {
             flex: 1;
-            min-width: 150px;
             text-align: center;
             padding: 12px 0;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 4px;
+            border-radius: 6px;
             transition: transform 0.2s, opacity 0.2s;
+            font-size: 0.9rem;
         }
+
         .btn:hover {
             transform: translateY(-2px);
-            opacity: 0.8;
+            opacity: 0.9;
         }
+
         .btn-amazon {
             background-color: #ffd700;
             color: #000000;
         }
+
         .btn-rakuten {
-            border: 2px solid #ffd700;
+            background-color: transparent;
             color: #ffd700;
+            border: 1px solid #ffd700;
         }
-        footer {
-            text-align: center;
-            font-size: 0.8rem;
-            margin-top: 50px;
-            color: #888;
+
+        @media (max-width: 480px) {
+            .button-container {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月25日 0時の超お得なセール品！</h1>
-    </header>
+    <div class="site-name">Value Information</div>
+    <h1>【楽天市場・Amazon】2026年2月25日 2時の超お得なセール品！</h1>
 
-    <!-- 商品1 -->
+    <!-- 商品カード -->
     <div class="card">
-        <div class="product-title">【50%OFF】音響革命！次世代ノイズキャンセリングヘッドホン Elite X</div>
-        <p class="benefit">騒音を消し去り、自分だけの静寂を。どこにいても、そこはあなただけの極上プライベート空間へ。</p>
-        <p class="reason">過去最安値を更新した今こそ、集中力を極限まで高める最高のパートナーを手に入れる絶好の機会です。<br>数量限定のタイムセールのため、在庫が尽きる前に確保することをおすすめします。</p>
+        <h2 class="product-title">【45%OFF】次世代ノイズキャンセリングヘッドホン Ultra Silence Gen-3</h2>
+        
+        <p class="description-benefit">喧騒を完全に遮断し、どこにいてもあなただけの極上リスニングルームを実現します。</p>
+        
+        <p class="description-reason">
+            過去最安値を更新した今回のタイムセールは、音質に妥協したくないプロフェッショナル層から注文が殺到しています。<br>
+            この割引率での放出は今回限り。今すぐ手に入れて、毎日の通勤・作業時間を最高のご褒美に変えましょう。
+        </p>
+
         <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
     </div>
 
-    <!-- 商品2 -->
+    <!-- 商品カード2 -->
     <div class="card">
-        <div class="product-title">【ポイント20倍】超高速・超軽量！2TB ポータブルSSD V-Slim</div>
-        <p class="benefit">待ち時間という概念を過去のものにし、溢れるクリエイティビティを加速させる。</p>
-        <p class="reason">ポイント還元を考慮すると実質価格が市場平均を大きく下回る、異次元のコストパフォーマンスを実現しています。<br>大容量データの転送ストレスをゼロにし、あなたの貴重な時間をクリエイティブな作業へ変換しましょう。</p>
+        <h2 class="product-title">【ポイント20倍】超高速充電対応・薄型フラッグシップモバイルバッテリー 20000mAh</h2>
+        
+        <p class="description-benefit">電池残量の不安から永遠に解放され、スマートなデジタルライフを加速させます。</p>
+        
+        <p class="description-reason">
+            実質価格で他店を圧倒するポイント還元は、2時からの限定数のみ適用される希少なチャンスです。<br>
+            災害対策としても需要が高まっており、在庫が底をつく前に確保しておくのが賢明な選択です。
+        </p>
+
         <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
     </div>
-
-    <!-- 商品3 -->
-    <div class="card">
-        <div class="product-title">【40%OFF】24時間体調管理 Smart Watch LifePro V3</div>
-        <p class="benefit">あなたの体調を精密に可視化し、毎日を最高のコンディションで迎えられる喜びを。</p>
-        <p class="reason">新モデル発表前の在庫一掃セールにより、フラッグシップ機がエントリーモデル並みの価格で手に入ります。<br>一生モノの健康習慣を手に入れる投資として、これ以上のタイミングは二度と訪れません。</p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
-        </div>
-    </div>
-
-    <footer>
-        &copy; 2026 Value Information All Rights Reserved.
-    </footer>
-</div>
 
 </body>
 </html>
