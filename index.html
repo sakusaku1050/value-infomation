@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Information - セール情報</title>
     <style>
         body {
             background-color: #000000;
@@ -19,42 +20,42 @@
         header {
             text-align: center;
             border-bottom: 2px solid #ffd700;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
         }
         .site-name {
             font-size: 1.2rem;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
         }
         h1 {
-            font-size: 1.5rem;
-            margin: 20px 0;
-            text-align: center;
+            font-size: 1.8rem;
+            margin: 10px 0;
         }
-        .product-card {
+        .card {
+            background-color: #111111;
             border: 1px solid #ffd700;
-            border-radius: 10px;
+            border-radius: 8px;
             padding: 25px;
             margin-bottom: 30px;
-            background-color: rgba(255, 215, 0, 0.05);
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
         .product-title {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: bold;
-            margin-top: 0;
             margin-bottom: 15px;
             border-left: 4px solid #ffd700;
             padding-left: 15px;
         }
-        .benefit {
+        .description-benefit {
             font-size: 1.1rem;
             font-weight: bold;
             margin-bottom: 10px;
             display: block;
         }
-        .reason {
+        .description-reason {
             font-size: 0.95rem;
+            color: #f0e68c;
             margin-bottom: 20px;
         }
         .button-container {
@@ -69,21 +70,31 @@
             padding: 12px 0;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 5px;
+            border-radius: 4px;
             transition: all 0.3s ease;
             border: 1px solid #ffd700;
         }
         .btn-amazon {
             background-color: #ffd700;
-            color: #000000;
+            color: #000;
         }
-        .btn-rakuten {
-            background-color: transparent;
+        .btn-amazon:hover {
+            background-color: #000;
             color: #ffd700;
         }
-        .btn:hover {
-            opacity: 0.8;
-            transform: translateY(-2px);
+        .btn-rakuten {
+            background-color: #000;
+            color: #ffd700;
+        }
+        .btn-rakuten:hover {
+            background-color: #ffd700;
+            color: #000;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            margin-top: 50px;
+            color: #888;
         }
     </style>
 </head>
@@ -92,48 +103,56 @@
 <div class="container">
     <header>
         <div class="site-name">Value Information</div>
+        <h1>【楽天市場・Amazon】2026年2月24日 20時の超お得なセール品！</h1>
     </header>
 
-    <h1>【楽天市場・Amazon】2026年2月24日 19時の超お得なセール品！</h1>
-
-    <!-- 商品カード1 -->
-    <div class="product-card">
-        <div class="product-title">【45%OFF】究極のノイズキャンセリングヘッドホン Pro X</div>
-        <p class="benefit">騒音を消し去り、一瞬で自分だけの静寂なコンサートホールへ。</p>
-        <p class="reason">
-            過去12ヶ月で最安値を更新。この価格で購入できるのは在庫限りのタイムセール中のみです。
-        </p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+    <main>
+        <!-- 商品1 -->
+        <div class="card">
+            <div class="product-title">【35%OFF】Sony WH-1000XM5 ノイズキャンセリングヘッドホン</div>
+            <div class="description-benefit">都会の喧騒を忘れ、あなただけのプライベートコンサートホールをその手に。</div>
+            <div class="description-reason">
+                次世代モデルの噂により、現行最高峰のフラッグシップ機が過去最安値を更新しました。<br>
+                最高水準の静寂をこの価格で手に入れられる、数少ない在庫一掃のチャンスです。
+            </div>
+            <div class="button-container">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+            </div>
         </div>
-    </div>
 
-    <!-- 商品カード2 -->
-    <div class="product-card">
-        <div class="product-title">【ポイント20倍】次世代スマートウォッチ Ultra Gen 3</div>
-        <p class="benefit">腕元に専属のパーソナルトレーナーを。あなたの健康管理を自動化する。</p>
-        <p class="reason">
-            実質2万円以上の還元。最新モデルが発売された今だからこそ、最強のコストパフォーマンスを発揮します。
-        </p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        <!-- 商品2 -->
+        <div class="card">
+            <div class="product-title">【ポイント20倍】Apple iPad Air (M2) 256GB モデル</div>
+            <div class="description-benefit">指先ひとつで、あなたの創造性が無限に広がるキャンバスへと変わる。</div>
+            <div class="description-reason">
+                期間限定のポイントアップキャンペーンにより、実質価格が市場平均を大きく下回っています。<br>
+                新生活を最高のスペックでスタートさせるための、今月最大の買い場が到来しました。
+            </div>
+            <div class="button-container">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+            </div>
         </div>
-    </div>
 
-    <!-- 商品カード3 -->
-    <div class="product-card">
-        <div class="product-title">【50%OFF】超高速SSD搭載 外付けポータブルドライブ 2TB</div>
-        <p class="benefit">データの待ち時間をゼロに。あなたの創造性を一秒も止めない。</p>
-        <p class="reason">
-            半導体価格高騰前のラストチャンス。大容量2TBモデルが、通常の1TBモデルと同等の価格まで暴落中です。
-        </p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        <!-- 商品3 -->
+        <div class="card">
+            <div class="product-title">【40%OFF】Anker Prime Wall Charger (100W, 3 ports)</div>
+            <div class="description-benefit">充電のストレスをゼロにし、すべてのデバイスに最速のエネルギーを。</div>
+            <div class="description-reason">
+                デスク周りを劇的にスッキリさせる最新の3ポート充電器が、24時間限定のタイムセール対象です。<br>
+                高出力100Wモデルがこの価格帯まで下がることは稀であり、即完売が予想されます。
+            </div>
+            <div class="button-container">
+                <a href="#" class="btn btn-amazon">Amazonで見る</a>
+                <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+            </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Value Information. 全ての情報は掲載時のものです。
+    </footer>
 </div>
 
 </body>
