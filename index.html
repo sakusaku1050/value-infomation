@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information - 超お得なセール品</title>
+    <title>Value Information</title>
     <style>
         body {
             background-color: #000000;
@@ -20,43 +20,42 @@
         header {
             text-align: center;
             border-bottom: 2px solid #ffd700;
+            padding-bottom: 20px;
             margin-bottom: 40px;
-            padding-bottom: 10px;
         }
         .site-name {
             font-size: 1.2rem;
-            letter-spacing: 0.1em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         h1 {
-            font-size: 1.5rem;
-            margin: 10px 0;
+            font-size: 1.8rem;
+            margin-top: 10px;
         }
         .card {
-            background-color: #0a0a0a;
+            background-color: #111111;
             border: 1px solid #ffd700;
-            border-radius: 12px;
-            padding: 25px;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
             margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
         }
-        .product-title {
-            font-size: 1.4rem;
-            font-weight: bold;
-            margin-top: 0;
-            margin-bottom: 15px;
+        h2 {
+            font-size: 1.5rem;
             border-left: 4px solid #ffd700;
             padding-left: 15px;
+            margin-bottom: 20px;
         }
         .benefit {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: bold;
             margin-bottom: 15px;
             display: block;
         }
         .reason {
-            font-size: 0.95rem;
-            margin-bottom: 20px;
-            color: #fff; /* 可読性のため説明文は白系に */
+            font-size: 1rem;
+            margin-bottom: 25px;
+            color: #ffffff;
         }
         .button-container {
             display: flex;
@@ -65,13 +64,13 @@
         }
         .btn {
             flex: 1;
-            min-width: 150px;
+            min-width: 200px;
             text-align: center;
-            padding: 12px;
-            border-radius: 5px;
+            padding: 15px 20px;
             text-decoration: none;
             font-weight: bold;
-            transition: opacity 0.3s;
+            border-radius: 5px;
+            transition: all 0.3s ease;
             border: 1px solid #ffd700;
         }
         .btn-amazon {
@@ -79,17 +78,13 @@
             color: #000;
         }
         .btn-rakuten {
-            background-color: #000;
+            background-color: transparent;
             color: #ffd700;
         }
         .btn:hover {
             opacity: 0.8;
-        }
-        footer {
-            text-align: center;
-            font-size: 0.8rem;
-            margin-top: 50px;
-            color: #888;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
         }
     </style>
 </head>
@@ -98,54 +93,34 @@
 <div class="container">
     <header>
         <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月24日 13時の超お得なセール品！</h1>
+        <h1>【楽天市場・Amazon】2026年2月24日 15時の超お得なセール品！</h1>
     </header>
 
-    <!-- 商品1 -->
-    <div class="card">
-        <h2 class="product-title">【45%OFF】究極の静寂体験！次世代ノイズキャンセリングヘッドホン</h2>
-        <span class="benefit">騒音を消し去り、自分だけの静寂を。</span>
+    <article class="card">
+        <h2>【50%OFF】次世代型ノイズキャンセリングヘッドホン Quantum Sound Elite</h2>
+        <p class="benefit">騒音を消し去り、自分だけの静寂を。あらゆる場所があなたのプライベートコンサートホールに変わります。</p>
         <p class="reason">
-            独自のAIチップが周囲の雑音を99%カットし、どこにいても一瞬でプライベートスタジオに変わります。<br>
-            期間限定のタイムセールにつき、過去最安値を更新中の今が手に入れる最大のチャンスです。
+            最新のAIチップを搭載したフラッグシップモデルが、発売以来初の半額という歴史的安値を更新中です。<br>
+            楽天ポイント10倍キャンペーンも重なるこの瞬間こそ、最上の音響環境を手に入れる絶好の好機です。
         </p>
         <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
-    </div>
+    </article>
 
-    <!-- 商品2 -->
-    <div class="card">
-        <h2 class="product-title">【ポイント25倍】健康をデザインする 超薄型スマートウォッチ Pro</h2>
-        <span class="benefit">24時間の体調管理で、毎日を史上最高のコンディションに。</span>
+    <article class="card">
+        <h2>【ポイント20倍】超高速M.4規格 8TB 外付けSSD Pro Max</h2>
+        <p class="benefit">データの重縛から解放され、数秒で数千枚の思い出を同期。クリエイティブな時間を無限に拡張します。</p>
         <p class="reason">
-            睡眠の質からストレスレベルまで可視化することで、あなたのパフォーマンスを劇的に引き上げます。<br>
-            楽天ポイント大幅還元中の今なら、実質価格で最新モデルを驚きの安さで購入可能です。
+            在庫一掃セールにより、通常価格から実質3万円以上の還元を受けられる異例のポイント設定となっています。<br>
+            クラウド維持費を払い続けるよりも、この圧倒的スピードと容量を今手に入れる方が賢明な投資です。
         </p>
         <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
-    </div>
-
-    <!-- 商品3 -->
-    <div class="card">
-        <h2 class="product-title">【30%OFF】作業効率を極限まで高める 4K有機ELポータブルモニター</h2>
-        <span class="benefit">場所を選ばず、プロフェッショナルなデュアルディスプレイ環境を。</span>
-        <p class="reason">
-            超軽量・薄型設計でありながら、息を呑むほど美しい色彩がクリエイティブな思考を刺激します。<br>
-            在庫完売が予想される人気モデルのため、セール価格が適用されている今、迷わず確保すべきです。
-        </p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
-        </div>
-    </div>
-
-    <footer>
-        &copy; 2026 Value Information. All prices are current as of 13:00.
-    </footer>
+    </article>
 </div>
 
 </body>
