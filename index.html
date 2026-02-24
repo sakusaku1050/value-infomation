@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information - 超お得なセール品</title>
+    <title>Value Information - セール情報</title>
     <style>
         body {
             background-color: #000000;
             color: #ffd700;
-            font-family: 'Helvetica Neue', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
             margin: 0;
             padding: 20px;
             line-height: 1.6;
@@ -17,23 +17,22 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        header {
-            text-align: center;
-            border-bottom: 2px solid #ffd700;
-            margin-bottom: 40px;
-            padding-bottom: 10px;
-        }
         .site-name {
             font-size: 1.2rem;
-            letter-spacing: 0.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
         h1 {
             font-size: 1.8rem;
-            margin-top: 10px;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+            text-align: center;
         }
-        .product-card {
-            background-color: #111111;
+        .card {
+            background-color: #0a0a0a;
             border: 1px solid #ffd700;
             border-radius: 12px;
             padding: 25px;
@@ -43,26 +42,21 @@
         h2 {
             font-size: 1.5rem;
             margin-top: 0;
-            border-left: 4px solid #ffd700;
-            padding-left: 15px;
-        }
-        .description {
-            margin: 20px 0;
+            margin-bottom: 15px;
         }
         .benefit {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             color: #ffffff;
         }
         .reason {
-            font-size: 1rem;
+            margin-bottom: 25px;
         }
         .button-group {
             display: flex;
             gap: 15px;
-            margin-top: 20px;
             flex-wrap: wrap;
         }
         .btn {
@@ -73,86 +67,80 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 6px;
-            transition: opacity 0.3s ease;
-        }
-        .btn:hover {
-            opacity: 0.8;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
         .btn-amazon {
-            background-color: #ff9900;
+            background-color: #ffd700;
             color: #000000;
+            border: 1px solid #ffd700;
+        }
+        .btn-amazon:hover {
+            background-color: #e6c200;
         }
         .btn-rakuten {
-            background-color: #bf0000;
-            color: #ffffff;
+            background-color: transparent;
+            color: #ffd700;
+            border: 1px solid #ffd700;
         }
-        footer {
-            text-align: center;
-            font-size: 0.8rem;
-            margin-top: 50px;
-            color: #888;
+        .btn-rakuten:hover {
+            background-color: rgba(255, 215, 0, 0.1);
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.4rem; }
+            h2 { font-size: 1.2rem; }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <header>
-        <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月24日 11時の超お得なセール品！</h1>
-    </header>
+    <div class="site-name">Value Information</div>
+    
+    <h1>【楽天市場・Amazon】2026年2月24日 12時の超お得なセール品！</h1>
 
-    <!-- 商品カード 1 -->
-    <div class="product-card">
-        <h2>【35%OFF】静寂の最高峰：次世代ワイヤレスヘッドホン Platinum ANC</h2>
-        <div class="description">
-            <span class="benefit">騒音を消し去り、自分だけの静寂を。</span>
-            <p class="reason">
-                世界最高クラスのノイズキャンセリング機能が、今だけ期間限定で過去最安値を更新中。<br>
-                ビジネスの集中力向上から極上の音楽体験まで、あなたの生活の質を劇的に変える一台です。
-            </p>
-        </div>
+    <!-- 商品1 -->
+    <div class="card">
+        <h2>【45%OFF】ハイエンド・ノイズキャンセリングヘッドホン</h2>
+        <p class="benefit">喧騒を完全に遮断し、どこにいても自分だけの「静寂のコンサートホール」を手に入れる。</p>
+        <p class="reason">
+            最新モデルへの買い替え需要に伴う在庫処分により、過去最安値を大幅に更新しました。<br>
+            この価格で手に入るチャンスは二度となく、日々の通勤や作業の集中力を劇的に変える絶好の機会です。
+        </p>
         <div class="button-group">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
     </div>
 
-    <!-- 商品カード 2 -->
-    <div class="product-card">
-        <h2>【ポイント20倍】爆速体験：フラッグシップタブレット Ultra Tab 14</h2>
-        <div class="description">
-            <span class="benefit">重い作業も指先ひとつ、自由自在なクリエイティビティを。</span>
-            <p class="reason">
-                最新チップ搭載のハイエンドモデルが、実質価格で市場想定を大きく下回るポイント還元中。<br>
-                在庫がなくなり次第終了となるため、PC級のパフォーマンスを手に入れたい方はこの機会を逃せません。
-            </p>
-        </div>
+    <!-- 商品2 -->
+    <div class="card">
+        <h2>【ポイント20倍】次世代ウルトラワイド・ゲーミングモニター</h2>
+        <p class="benefit">視界を覆い尽くす圧倒的な没入感で、ゲームの世界の住人として覚醒する。</p>
+        <p class="reason">
+            楽天お買い物マラソンと連動し、実質価格が市場平均を3万円以上も下回る異常事態となっています。<br>
+            テレワークの生産性向上と究極の娯楽環境を同時に実現できる、今期最大の「買い」アイテムです。
+        </p>
         <div class="button-group">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
     </div>
 
-    <!-- 商品カード 3 -->
-    <div class="product-card">
-        <h2>【40%OFF】未来の健康管理：スマートウォッチ Elite Series 5</h2>
-        <div class="description">
-            <span class="benefit">24時間、あなた専属の医師が腕元にいる安心感を。</span>
-            <p class="reason">
-                健康意識が高まる今、心拍・睡眠解析を極めた最新モデルが驚異の40%OFFセールを実施。<br>
-                洗練されたデザインはビジネスシーンでも映え、自己管理を最高のステータスへと昇華させます。
-            </p>
-        </div>
+    <!-- 商品3 -->
+    <div class="card">
+        <h2>【30%OFF】超軽量・大容量フラッグシップ・モバイルバッテリー</h2>
+        <p class="benefit">電池残量を気にするストレスから永久に解放され、自由な移動をデザインする。</p>
+        <p class="reason">
+            災害対策への関心が高まる中、Amazonの限定タイムセールにより非常時用としても最適な高性能モデルが特別価格に。<br>
+            ノートPCも急速充電可能なパワーを、ポケットサイズで持ち歩ける贅沢を今すぐ手に入れてください。
+        </p>
         <div class="button-group">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
     </div>
 
-    <footer>
-        &copy; 2026 Value Information. All prices and availability are subject to change.
-    </footer>
 </div>
 
 </body>
