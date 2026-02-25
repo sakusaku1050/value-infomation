@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information</title>
+    <title>Value Information - 超お得セール情報</title>
     <style>
         body {
             background-color: #000000;
@@ -19,69 +19,79 @@
         }
         header {
             text-align: center;
-            border-bottom: 2px solid #ffd700;
+            border-bottom: 1px solid #ffd700;
             padding-bottom: 10px;
             margin-bottom: 30px;
         }
         .site-name {
             font-size: 1.2rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         h1 {
             font-size: 1.8rem;
-            margin: 10px 0;
+            text-align: center;
+            margin: 20px 0 40px;
         }
         .card {
-            background-color: #0a0a0a;
+            background-color: #0c0c0c;
             border: 1px solid #ffd700;
-            border-radius: 12px;
+            border-radius: 8px;
             padding: 25px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 0;
+        .product-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 15px;
             border-left: 4px solid #ffd700;
             padding-left: 15px;
         }
         .benefit {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             display: block;
         }
         .reason {
-            margin-bottom: 25px;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            color: #fff; /* 読みやすさのため説明文のみ白に近い色に */
+            opacity: 0.9;
         }
-        .button-container {
+        .button-group {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
         .btn {
             flex: 1;
-            min-width: 200px;
+            min-width: 150px;
             text-align: center;
-            padding: 12px 0;
+            padding: 12px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 5px;
-            transition: transform 0.2s, opacity 0.2s;
             border: 1px solid #ffd700;
-        }
-        .btn:hover {
-            transform: translateY(-2px);
-            opacity: 0.8;
+            border-radius: 4px;
+            transition: all 0.3s ease;
         }
         .btn-amazon {
-            background-color: #ffd700;
-            color: #000000;
+            background-color: transparent;
+            color: #ffd700;
         }
         .btn-rakuten {
-            background-color: #000000;
-            color: #ffd700;
+            background-color: #ffd700;
+            color: #000;
+        }
+        .btn:hover {
+            opacity: 0.7;
+            transform: translateY(-2px);
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            margin-top: 50px;
+            opacity: 0.6;
         }
     </style>
 </head>
@@ -90,34 +100,61 @@
 <div class="container">
     <header>
         <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月25日 20時の超お得なセール品！</h1>
     </header>
 
-    <article class="card">
-        <h2>【40%OFF】次世代フラッグシップスマホ X-Phone Ultra</h2>
-        <p class="benefit">一眼レフを超越する描写力で、日常のすべてを映画のような感動へと変える。</p>
-        <p class="reason">
-            2026年春の新作発表を前に、現行最高峰モデルが今夜20時より過去最安値を更新しました。<br>
-            楽天ポイント10倍還元とAmazon限定クーポンが重複する、この2時間だけの限定価格を見逃さないでください。
-        </p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
-        </div>
-    </article>
+    <h1>【楽天市場・Amazon】2026年2月25日 21時の超お得なセール品！</h1>
 
-    <article class="card">
-        <h2>【ポイント20倍】究極の静寂：ノイズキャンセリングヘッドホン Pro</h2>
-        <p class="benefit">騒音を消し去り、瞬時にあなただけのプライベートコンサートホールを創り出す。</p>
-        <p class="reason">
-            テレワークや移動時間を極上のリラックスタイムに変える最新技術が、実質価格で3万円を切る衝撃のセール中です。<br>
-            在庫限りの売り尽くしとなっており、次回の入荷予定は未定。今すぐカートへ確保することをお勧めします。
-        </p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+    <!-- 商品カード 1 -->
+    <div class="card">
+        <div class="product-title">【35%OFF】次世代ノイズキャンセリングイヤホン Ultra Sound X1</div>
+        <div class="description">
+            <span class="benefit">どこにいても自分だけの静寂を。究極の没入体験をその手に。</span>
+            <p class="reason">
+                過去最安値を更新した本日21時からのタイムセールは、他ECサイトを圧倒する割引率です。<br>
+                楽天ポイント10倍アップキャンペーンと重なるこの瞬間が、実質価格で最も安く手に入る絶好の機会です。
+            </p>
         </div>
-    </article>
+        <div class="button-group">
+            <a href="#" class="btn btn-amazon">Amazonでチェック</a>
+            <a href="#" class="btn btn-rakuten">楽天市場でチェック</a>
+        </div>
+    </div>
+
+    <!-- 商品カード 2 -->
+    <div class="card">
+        <div class="product-title">【ポイント15倍】AI搭載スマートウォッチ Chronos V3 Gold Edition</div>
+        <div class="description">
+            <span class="benefit">健康管理をAIに委ね、活力に満ち溢れた理想の毎日を手に入れる。</span>
+            <p class="reason">
+                新モデル発表前の在庫一掃セールにより、これまでにない高還元率が設定されています。<br>
+                Amazonの特設クーポンを併用すれば、普段のセールよりもさらに5,000円安く購入可能です。
+            </p>
+        </div>
+        <div class="button-group">
+            <a href="#" class="btn btn-amazon">Amazonでチェック</a>
+            <a href="#" class="btn btn-rakuten">楽天市場でチェック</a>
+        </div>
+    </div>
+
+    <!-- 商品カード 3 -->
+    <div class="card">
+        <div class="product-title">【50%OFF】超高速・超小型GaN充電器 VoltMaster 140W</div>
+        <div class="description">
+            <span class="benefit">デスクの混雑を解消し、全てのデバイスに光速のエネルギーを。</span>
+            <p class="reason">
+                本日21時から限定200個のみ、半額クーポンが適用される先行者利益のビッグイベントです。<br>
+                楽天マラソンの買い回り対象としても最適で、複数購入が相次ぐため即完売が予想されます。
+            </p>
+        </div>
+        <div class="button-group">
+            <a href="#" class="btn btn-amazon">Amazonでチェック</a>
+            <a href="#" class="btn btn-rakuten">楽天市場でチェック</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Value Information. All rights reserved.
+    </footer>
 </div>
 
 </body>
