@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Information</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffd700;
+            font-family: 'Helvetica Neue', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .site-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin: 10px 0 0 0;
+        }
+        .card {
+            background-color: #111111;
+            border: 1px solid #ffd700;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+        }
+        .product-heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffd700;
+            padding-left: 15px;
+        }
+        .benefit {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .reason {
+            margin-bottom: 25px;
+        }
+        .btn-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+        .btn-amazon {
+            background-color: #ffd700;
+            color: #000000;
+        }
+        .btn-rakuten {
+            border: 2px solid #ffd700;
+            color: #ffd700;
+        }
+        @media (max-width: 600px) {
+            .btn-container {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="site-name">Value Information</div>
+        <h1>【楽天市場・Amazon】2026年2月25日 14時の超お得なセール品！</h1>
+    </header>
+
+    <!-- 商品カード開始 -->
+    <div class="card">
+        <div class="product-heading">【45%OFF】次世代ノイズキャンセリングヘッドホン UltraFocus Pro</div>
+        
+        <div class="description">
+            <span class="benefit">騒音を消し去り、自分だけの静寂を。どこにいても極上の集中空間が手に入る。</span>
+            <p class="reason">
+                現在、Amazonプライム限定セールと楽天ポイント10倍キャンペーンが重なる異例の事態となっています。<br>
+                過去12ヶ月の最安値を更新しており、在庫が切れる前の今がまさに手に入れるべき唯一のタイミングです。
+            </p>
+        </div>
+
+        <div class="btn-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+        </div>
+    </div>
+    <!-- 商品カード終了 -->
+
+    <!-- 商品カード開始（複数例） -->
+    <div class="card">
+        <div class="product-heading">【ポイント20倍】超高速充電対応・薄型モバイルバッテリー MaxCharge 10000</div>
+        
+        <div class="description">
+            <span class="benefit">バッテリー切れの不安から解放され、スマートな移動体験をその手に。</span>
+            <p class="reason">
+                楽天スーパーSALEの先行ポイントアップ対象となっており、実質価格で他店を圧倒する安さを実現しています。<br>
+                新モデル発表直前の在庫処分価格のため、性能を重視する賢いユーザーに最適な買い時です。
+            </p>
+        </div>
+
+        <div class="btn-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+        </div>
+    </div>
+    <!-- 商品カード終了 -->
+</div>
+
+</body>
+</html>
