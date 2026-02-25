@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information - セール情報</title>
+    <title>Value Information</title>
     <style>
         body {
             background-color: #000000;
             color: #ffd700;
-            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            font-family: 'Helvetica Neue', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
             margin: 0;
             padding: 20px;
             line-height: 1.6;
@@ -18,72 +18,77 @@
             margin: 0 auto;
         }
         header {
-            text-align: center;
             border-bottom: 2px solid #ffd700;
             padding-bottom: 10px;
             margin-bottom: 30px;
         }
         .site-name {
             font-size: 1.2rem;
+            font-weight: bold;
             letter-spacing: 0.1em;
-            text-transform: uppercase;
         }
         h1 {
-            font-size: 1.5rem;
-            margin: 10px 0;
+            font-size: 1.8rem;
+            margin: 10px 0 0 0;
         }
-        .product-card {
-            background-color: #1a1a1a;
+        .card {
+            background-color: #111111;
             border: 1px solid #ffd700;
-            border-radius: 10px;
+            border-radius: 12px;
             padding: 25px;
             margin-bottom: 30px;
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
-        .product-title {
-            font-size: 1.4rem;
+        .product-heading {
+            font-size: 1.5rem;
             font-weight: bold;
-            margin-top: 0;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             border-left: 4px solid #ffd700;
             padding-left: 15px;
         }
         .benefit {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: bold;
-            color: #ffffff;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            display: block;
         }
         .reason {
-            font-size: 0.95rem;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
-        .button-container {
-            display: flex;
+        .btn-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 15px;
-            flex-wrap: wrap;
         }
         .btn {
-            flex: 1;
-            min-width: 150px;
-            text-align: center;
-            padding: 12px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 5px;
-            transition: opacity 0.3s;
+            border-radius: 8px;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+        .btn:hover {
+            opacity: 0.8;
         }
         .btn-amazon {
             background-color: #ffd700;
             color: #000000;
         }
         .btn-rakuten {
-            background-color: #000000;
+            border: 2px solid #ffd700;
             color: #ffd700;
-            border: 1px solid #ffd700;
         }
-        .btn:hover {
-            opacity: 0.8;
+        @media (max-width: 600px) {
+            .btn-container {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
         }
     </style>
 </head>
@@ -92,38 +97,46 @@
 <div class="container">
     <header>
         <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月25日 13時の超お得なセール品！</h1>
+        <h1>【楽天市場・Amazon】2026年2月25日 14時の超お得なセール品！</h1>
     </header>
 
-    <div class="product-card">
-        <h2 class="product-title">【45%OFF】次世代フラッグシップスマホ Pro Max 2026</h2>
-        <p class="benefit">一瞬の閃きを逃さない、プロ級のクリエイティビティをその手に。</p>
-        <p class="reason">最新モデルが市場最安値を更新。本日13時からのタイムセール限定価格です。<br>ポイント還元を含めると実質半額以下となるため、買い替えは今しかありません。</p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+    <!-- 商品カード開始 -->
+    <div class="card">
+        <div class="product-heading">【45%OFF】次世代ノイズキャンセリングヘッドホン UltraFocus Pro</div>
+        
+        <div class="description">
+            <span class="benefit">騒音を消し去り、自分だけの静寂を。どこにいても極上の集中空間が手に入る。</span>
+            <p class="reason">
+                現在、Amazonプライム限定セールと楽天ポイント10倍キャンペーンが重なる異例の事態となっています。<br>
+                過去12ヶ月の最安値を更新しており、在庫が切れる前の今がまさに手に入れるべき唯一のタイミングです。
+            </p>
         </div>
-    </div>
 
-    <div class="product-card">
-        <h2 class="product-title">【ポイント20倍】超軽量 8K モバイルディスプレイ</h2>
-        <p class="benefit">カフェのテーブルが、瞬時に最高効率のクリエイティブスタジオへ変わる。</p>
-        <p class="reason">期間限定のポイント大幅アップにより、普段のセールを上回る実質価格を実現。<br>リモートワーク需要で在庫が激減しているため、即断即決が推奨される逸品です。</p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        <div class="btn-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
     </div>
+    <!-- 商品カード終了 -->
 
-    <div class="product-card">
-        <h2 class="product-title">【30%OFF】ノイズキャンセリング搭載 プレミアムヘッドホン</h2>
-        <p class="benefit">周囲の雑音を魔法のように消し去り、極上の音楽体験に深く没入する。</p>
-        <p class="reason">これまで値引きのなかった新色が、数時間限定のフラッシュセール対象に浮上。<br>音質に妥協したくないユーザーから注文が殺到しており、完売必至の状況です。</p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonで見る</a>
-            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+    <!-- 商品カード開始（複数例） -->
+    <div class="card">
+        <div class="product-heading">【ポイント20倍】超高速充電対応・薄型モバイルバッテリー MaxCharge 10000</div>
+        
+        <div class="description">
+            <span class="benefit">バッテリー切れの不安から解放され、スマートな移動体験をその手に。</span>
+            <p class="reason">
+                楽天スーパーSALEの先行ポイントアップ対象となっており、実質価格で他店を圧倒する安さを実現しています。<br>
+                新モデル発表直前の在庫処分価格のため、性能を重視する賢いユーザーに最適な買い時です。
+            </p>
+        </div>
+
+        <div class="btn-container">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
     </div>
+    <!-- 商品カード終了 -->
 </div>
 
 </body>
