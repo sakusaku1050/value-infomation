@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Information - セール情報</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffd700;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .site-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background-color: #0a0a0a;
+            border: 1px solid #ffd700;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+        }
+        .product-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-left: 4px solid #ffd700;
+            padding-left: 15px;
+        }
+        .benefit {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .reason {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            padding: 12px 0;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            border: 1px solid #ffd700;
+        }
+        .btn-amazon {
+            background-color: transparent;
+            color: #ffd700;
+        }
+        .btn-rakuten {
+            background-color: #ffd700;
+            color: #000000;
+        }
+        .btn:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.4rem; }
+            .product-title { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="site-name">Value Information</div>
+    <h1>【楽天市場・Amazon】2026年2月25日 19時の超お得なセール品！</h1>
+
+    <!-- 商品カード1 -->
+    <div class="card">
+        <h2 class="product-title">【45%OFF】次世代ノイズキャンセリングヘッドホン Pro X</h2>
+        <p class="benefit">騒音を消し去り、一瞬で自分だけの静寂なコンサートホールへ。</p>
+        <p class="reason">
+            過去最安値を更新したこの瞬間に手に入れれば、毎日の通勤時間が贅沢なリラックスタイムに変わります。<br>
+            本日限定のタイムセールに加え、今なら即納在庫が確保されている絶好の機会です。
+        </p>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        </div>
+    </div>
+
+    <!-- 商品カード2 -->
+    <div class="card">
+        <h2 class="product-title">【ポイント20倍】超高速M4チップ搭載 14インチ Laptop Elite</h2>
+        <p class="benefit">重いタスクを瞬時に終わらせ、大切な人と過ごす自由な時間を創り出す。</p>
+        <p class="reason">
+            実質価格で他店を圧倒するポイント還元率は、新生活準備前のこのタイミングだけの特別仕様です。<br>
+            プロ仕様のスペックが手の届く価格まで降りてきた今、妥協のない作業環境を構築してください。
+        </p>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        </div>
+    </div>
+
+    <!-- 商品カード3 -->
+    <div class="card">
+        <h2 class="product-title">【30%OFF】スマートウォッチ Ultra Gen.3</h2>
+        <p class="benefit">あなたの専属トレーナーが、24時間365日健康と最高のパフォーマンスを支える。</p>
+        <p class="reason">
+            最新モデルが初めて30%OFFのラインを超え、コストパフォーマンスは現在市場でナンバーワンです。<br>
+            在庫が枯渇する前の19時台が購入のラストチャンス。迷っている間に完売する恐れがあります。
+        </p>
+        <div class="button-container">
+            <a href="#" class="btn btn-amazon">Amazonで見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で見る</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
