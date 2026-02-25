@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Information - 超お得セール情報</title>
+    <title>Value Information</title>
     <style>
         body {
             background-color: #000000;
@@ -11,53 +11,57 @@
             font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
             margin: 0;
             padding: 20px;
-            line-height: 1.6;
+            display: flex;
+            justify-content: center;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            border-bottom: 2px solid #ffd700;
-            padding-bottom: 20px;
+            width: 100%;
         }
         .site-name {
             font-size: 1.2rem;
-            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 10px;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
         h1 {
             font-size: 1.8rem;
-            margin-top: 10px;
-        }
-        .product-card {
-            background-color: #111111;
-            border: 1px solid #ffd700;
-            border-radius: 8px;
-            padding: 25px;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
-        h2 {
+        .card {
+            background-color: #0a0a0a;
+            border: 1px solid #ffd700;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .product-title {
             font-size: 1.5rem;
+            font-weight: bold;
             margin-top: 0;
-            border-left: 4px solid #ffd700;
-            padding-left: 15px;
+            margin-bottom: 15px;
+            line-height: 1.4;
         }
         .benefit {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             margin-bottom: 15px;
-            color: #ffffff;
+            display: block;
         }
         .reason {
-            font-size: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
             margin-bottom: 25px;
-            color: #cccccc;
+            color: #f0e68c; /* 少し落ち着いた金系 */
         }
-        .button-container {
+        .button-group {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
@@ -69,89 +73,44 @@
             text-align: center;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
+            border-radius: 8px;
+            transition: opacity 0.3s;
         }
         .btn-amazon {
             background-color: #ffd700;
             color: #000000;
-            border: 1px solid #ffd700;
-        }
-        .btn-amazon:hover {
-            background-color: #000000;
-            color: #ffd700;
         }
         .btn-rakuten {
             background-color: transparent;
             color: #ffd700;
-            border: 1px solid #ffd700;
+            border: 2px solid #ffd700;
         }
-        .btn-rakuten:hover {
-            background-color: #ffd700;
-            color: #000000;
-        }
-        footer {
-            text-align: center;
-            font-size: 0.8rem;
-            margin-top: 50px;
-            color: #666;
+        .btn:hover {
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <header>
-        <div class="site-name">Value Information</div>
-        <h1>【楽天市場・Amazon】2026年2月25日 16時の超お得なセール品！</h1>
-    </header>
+    <div class="site-name">Value Information</div>
+    <h1>【楽天市場・Amazon】2026年2月25日 17時の超お得なセール品！</h1>
 
-    <!-- 商品カード 1 -->
-    <article class="product-card">
-        <h2>【35%OFF】次世代ノイズキャンセリングヘッドホン Pro Silence Gen-3</h2>
-        <p class="benefit">騒音を消し去り、あらゆる場所をあなた専用の極上コンサートホールへ。</p>
+    <div class="card">
+        <div class="product-title">【45%OFF】究極の没入感。次世代ノイズキャンセリングヘッドホン SoundMaster Elite v3</div>
+        
+        <span class="benefit">騒音を消し去り、自分だけの静寂を。</span>
+        
         <p class="reason">
-            過去12ヶ月で最安値を更新。この価格での放出は在庫限りとなっており、<br>
-            次回のセール予定は未定のため、今手に入れるのが最も賢明な選択です。
+            過去最安値を大幅に更新した今、最高峰の音響体験を半額近い価格で手に入れる絶好のチャンスです。<br>
+            このタイムセールは数時間で終了が予想されるため、後悔する前に確保することを強く推奨します。
         </p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonでチェック</a>
-            <a href="#" class="btn btn-rakuten">楽天市場でチェック</a>
-        </div>
-    </article>
 
-    <!-- 商品カード 2 -->
-    <article class="product-card">
-        <h2>【20%ポイント還元】ウルトラワイド・クリエイティブモニター 34インチ</h2>
-        <p class="benefit">広大な視界が思考の制限を解き放ち、クリエイティブの生産性を劇的に加速させる。</p>
-        <p class="reason">
-            楽天ポイント大幅アップキャンペーンと重なる今、実質価格が驚異的な安さに。<br>
-            リモートワーク環境をアップグレードするなら、このタイミングを逃す手はありません。
-        </p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonでチェック</a>
-            <a href="#" class="btn btn-rakuten">楽天市場でチェック</a>
+        <div class="button-group">
+            <a href="#" class="btn btn-amazon">Amazonセール会場へ</a>
+            <a href="#" class="btn btn-rakuten">楽天市場でポイント確認</a>
         </div>
-    </article>
-
-    <!-- 商品カード 3 -->
-    <article class="product-card">
-        <h2>【40%OFF】スマートウォッチ Elite Health Tracker</h2>
-        <p class="benefit">24時間、専属コーチがあなたのパフォーマンスを管理し、最高のコンディションを維持する。</p>
-        <p class="reason">
-            型落ちではなく最新モデルが数量限定のタイムセールに登場しました。<br>
-            Amazonのクーポン適用を合わせると、通常より1万円以上安く購入可能です。
-        </p>
-        <div class="button-container">
-            <a href="#" class="btn btn-amazon">Amazonでチェック</a>
-            <a href="#" class="btn btn-rakuten">楽天市場でチェック</a>
-        </div>
-    </article>
-
-    <footer>
-        &copy; 2026 Value Information. All rights reserved.
-    </footer>
+    </div>
 </div>
 
 </body>
