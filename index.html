@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Information</title>
     <style>
         body {
             background-color: #000000;
@@ -19,8 +20,10 @@
         .site-name {
             font-size: 1.2rem;
             font-weight: bold;
+            text-align: center;
             margin-bottom: 10px;
-            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         h1 {
             font-size: 1.8rem;
@@ -30,30 +33,29 @@
             margin-bottom: 40px;
         }
         .card {
-            background-color: #0a0a0a;
+            background-color: #111111;
             border: 1px solid #ffd700;
-            border-radius: 12px;
+            border-radius: 10px;
             padding: 25px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
         }
         h2 {
             font-size: 1.4rem;
             margin-top: 0;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             border-left: 4px solid #ffd700;
             padding-left: 15px;
         }
         .benefit {
             font-size: 1.1rem;
             font-weight: bold;
-            color: #ffffff;
             margin-bottom: 15px;
-            display: block;
+            color: #ffffff;
         }
         .reason {
             font-size: 0.95rem;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
         .button-group {
             display: flex;
@@ -62,24 +64,31 @@
         }
         .btn {
             flex: 1;
-            min-width: 160px;
+            min-width: 150px;
             text-align: center;
-            padding: 12px 20px;
-            border: 1px solid #ffd700;
-            color: #ffd700;
+            padding: 12px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 6px;
+            border-radius: 5px;
             transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        .btn-amazon {
+            background-color: #ffd700;
+            color: #000;
+        }
+        .btn-rakuten {
+            border: 1px solid #ffd700;
+            color: #ffd700;
+            background-color: transparent;
         }
         .btn:hover {
-            background-color: #ffd700;
-            color: #000000;
+            opacity: 0.8;
+            transform: translateY(-2px);
         }
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
             h1 { font-size: 1.4rem; }
             h2 { font-size: 1.2rem; }
-            .btn { width: 100%; }
         }
     </style>
 </head>
@@ -87,33 +96,47 @@
 
 <div class="container">
     <div class="site-name">Value Information</div>
-    <h1>【楽天市場・Amazon】2026年2月25日 11時の超お得なセール品！</h1>
+    <h1>【楽天市場・Amazon】2026年2月25日 12時の超お得なセール品！</h1>
 
-    <!-- 商品カード 1 -->
+    <!-- 商品1 -->
     <div class="card">
-        <h2>【35%OFF】究極の没入感 Sony ノイズキャンセリングヘッドホン WH-1000XM5</h2>
-        <span class="benefit">街中の喧騒を完全に遮断し、お気に入りの音楽だけに包まれる至福の移動時間を。</span>
-        <div class="reason">
-            業界最高峰の静寂性能を誇るフラッグシップ機が、過去最安値圏まで一気にプライスダウンしました。<br>
-            この割引率は数ヶ月に一度の好機であり、在庫がなくなる前の「今」がまさに手に入れるべき瞬間です。
-        </div>
+        <h2>【45%OFF】次世代完全ワイヤレスイヤホン SonicPro X1</h2>
+        <p class="benefit">雑踏のノイズを完全に消し去り、瞬時に静寂と至高の音楽空間へ没入する。</p>
+        <p class="reason">
+            春の新作発表を控えた在庫一掃セールにより、過去最安値を大幅に更新する驚異のプライスが実現しました。<br>
+            この価格で手に入るのは24時間限定となっており、今を逃すと数万円の損と言っても過言ではありません。
+        </p>
         <div class="button-group">
-            <a href="#" class="btn">Amazonで詳細を見る</a>
-            <a href="#" class="btn">楽天市場で詳細を見る</a>
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
     </div>
 
-    <!-- 商品カード 2 -->
+    <!-- 商品2 -->
     <div class="card">
-        <h2>【ポイント15倍】爆速M3チップ搭載 MacBook Air 13インチモデル</h2>
-        <span class="benefit">重い作業も涼しい顔で。どこへでも持ち運べる軽さと、限界を知らない処理能力をその手に。</span>
-        <div class="reason">
-            実質的な大幅還元を受けられるポイントアップ祭は、Apple製品を最も賢く購入できる絶好の機会です。<br>
-            円安による再値上げが懸念される中、還元率が最大化されている今、迷わずアップグレードすべきです。
-        </div>
+        <h2>【ポイント20倍】超薄型 14インチ 4K有機ELモバイルモニター</h2>
+        <p class="benefit">カフェの狭いテーブルが、プロフェッショナルな多画面オフィスへと変貌する。</p>
+        <p class="reason">
+            テレワーク需要のピークアウトに伴う特別還元祭により、実質価格が市場相場を大きく下回っています。<br>
+            楽天ポイントの大幅還元とAmazonのクーポンが重複するこのタイミングこそ、機動力を高める絶好の機会です。
+        </p>
         <div class="button-group">
-            <a href="#" class="btn">Amazonで詳細を見る</a>
-            <a href="#" class="btn">楽天市場で詳細を見る</a>
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
+        </div>
+    </div>
+
+    <!-- 商品3 -->
+    <div class="card">
+        <h2>【30%OFF】大容量20000mAh 140W出力対応モバイルバッテリー</h2>
+        <p class="benefit">バッテリー残量の不安から解放され、どこにいてもフルスピードで作業を完結させる。</p>
+        <p class="reason">
+            最新の急速充電規格に対応したフラッグシップモデルが、タイムセール祭りの目玉商品としてラインナップされました。<br>
+            PCも充電可能な高出力をこの価格で手に入れられる機会は、半年に一度あるかないかの希少なチャンスです。
+        </p>
+        <div class="button-group">
+            <a href="#" class="btn btn-amazon">Amazonで詳細を見る</a>
+            <a href="#" class="btn btn-rakuten">楽天市場で詳細を見る</a>
         </div>
     </div>
 </div>
